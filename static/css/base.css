@@ -91,3 +91,42 @@ body {
         padding-top: 164px;
     }
 }
+
+
+
+/* ------------------------------------ Footer */
+footer {
+    background-color: #d3dbde;
+    opacity: 0.8;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.footer {
+    margin-top: 60px;
+}
+
+.footer-links {
+    color: #323a25;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.footer-links:hover {
+    color: #323a25;
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+.footer-div {
+    padding: 5px;
+}
+
+.footer-header {
+    padding: 8px;
+}
+
+
+.contact-form {
+    margin: 0 auto;
+}
