@@ -95,6 +95,15 @@ body {
 }
 
 
+@media (max-width: 600px) {
+    .logo {
+        font-size: 2rem !important;
+        color: #000;
+        margin-top: 140px;
+        opacity: 0.8;
+    }
+}
+
 
 /* Footer */
 footer {
