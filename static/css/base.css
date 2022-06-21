@@ -21,9 +21,10 @@ body {
     width: 1.5rem;
 }
 
-.logo-font {
-    text-transform: uppercase;
-    color: #313523;
+.logo {
+    color: #000;
+    font-weight: 600 !important;
+    opacity: 0.8;
 }
 
 .main-logo-link {
@@ -32,7 +33,7 @@ body {
 }
 
 .shop-now-button {
-    background: #85d0d5;
+    background: #ffffff;
     padding: 0.7rem;
     border-radius: 0.6rem;
     color: white;
@@ -42,7 +43,7 @@ body {
 
 .shop-now-text {
     text-decoration: none;
-    color: #9e6a30;
+    color: #000;
 }
 
 .btn-black {
@@ -56,8 +57,9 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #313523;
+    background: #85d0d5;
     color: white;
+    text-decoration: none;
 }
 
 .text-black {
@@ -109,7 +111,9 @@ footer {
 .footer-links {
     color: #323a25;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 700;
+    padding: 1rem;
+    font-size: 1.2rem;
 }
 
 .footer-links:hover {
@@ -124,9 +128,41 @@ footer {
 
 .footer-header {
     padding: 8px;
+    color: #000 !important;
 }
-
 
 .contact-form {
     margin: 0 auto;
+}
+
+h6 {
+    margin-top: 20px !important;
+    color: #323a25;
+    ;
+}
+
+.text-secondary {
+    text-transform: uppercase;
+}
+
+.optionalParent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Mailchimp Styles */
+
+.text-mc {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+#mc-embedded-subscribe {
+    padding: 5px;
+}
+
+.mc-field-group,
+.required {
+    padding: 5px;
 }
