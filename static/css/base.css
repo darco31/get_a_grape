@@ -21,10 +21,40 @@ body {
     width: 1.5rem;
 }
 
+.overlay {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+
+#topnav,
+.navbar {
+    background: #d3dbde;
+}
+
+.logo-font-pro {
+    z-index: 2;
+    color: #504d2c;
+}
+
+.logo-font-pro:hover {
+    color: #232b2e;
+}
+
+.logo-font {
+    color: #504d2c;
+}
+
 .logo {
     color: #000;
     font-weight: 600 !important;
     opacity: 0.8;
+    margin-top: 100px;
 }
 
 .main-logo-link {
@@ -44,6 +74,10 @@ body {
 .shop-now-text {
     text-decoration: none;
     color: #000;
+}
+
+.shop-text {
+    margin-top: 50px;
 }
 
 .btn-black {
@@ -132,7 +166,7 @@ footer {
 }
 
 .footer-div {
-    padding: 5px;
+    padding: 10px;
 }
 
 .footer-header {
@@ -174,4 +208,18 @@ h6 {
 .mc-field-group,
 .required {
     padding: 5px;
+}
+
+
+/* Test styles for home page nav main bar */
+
+input[name='q']::placeholder,
+.acc-btn,
+.amt,
+i {
+    color: #504d2c;
+}
+
+.dropdown-menu {
+    background-color: #d3dbde !important;
 }

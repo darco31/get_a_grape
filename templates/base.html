@@ -42,17 +42,17 @@
 
 <body>
     <header class="container-fluid fixed-top">
-        <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
+        <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-black my-0">Get A<strong> Grape</strong> </h2>
+                    <h2 class="logo-font my-0">Get A<strong> Grape</strong> </h2>
                 </a>
             </div>
             <!-- Form for the search box on home page -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form action="" method="GET">
                     <div class="input-group w-100">
-                        <input type="text" name="q" placeholder="Search the site" class="form-control border border-black rounded-0">
+                        <input type="text" name="q" placeholder="Take a look around" class="form-control border border-black rounded-0">
                         <div class="input-group-append">
                             <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                                 <span class="icon">
@@ -71,7 +71,7 @@
                         <a href="#" class="text-black nav-link" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
-                                <p class="my-0">My Account</p>
+                                <p class="my-0 acc-btn">My Account</p>
                             </div>
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
@@ -93,11 +93,11 @@
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                                <p class="my-0">
+                                <p class="my-0 amt">
                                     {% if grand_total %}
                                     ${{ grand_total|floatformat:2 }}
                                     {% else %}
-                                    $0.00
+                                    € 0.00
                                     {% endif %}
                                 </p>
                             </div>
@@ -108,7 +108,7 @@
         </div>
         <!-- Mobile and nav bar -->
         <div class="row bg-white">
-            <nav class="navbar navbar-expand-lg navbar-light w-100">
+            <nav class="navbar navbar-expand-lg w-100">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
