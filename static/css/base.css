@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;500&display=swap');
 
+:root {
+    --main-radius: 5px;
+    --main-padding: 5px;
+    --text-color: #66fcf1;
+    --text-second-color: #fff;
+    --text-third-color: #000000;
+    --text-forth-color: #C5C6C7;
+    --progess-bar-color: #144945;
+}
+
 html {
     height: 100%;
 }
@@ -31,6 +41,16 @@ body {
     z-index: -1;
 }
 
+/* Style the nav bar toggler for mobile screen */
+
+.navbar-toggler {
+    border-color: #144945 !important;
+    border-width: 3px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(20, 73, 69, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
 
 #topnav,
 .navbar {
@@ -155,7 +175,7 @@ footer {
     color: #323a25;
     cursor: pointer;
     font-weight: 700;
-    padding: 1rem;
+    padding: 12px;
     font-size: 1.2rem;
 }
 
@@ -163,6 +183,7 @@ footer {
     color: #323a25;
     text-decoration: none;
     opacity: 0.6;
+
 }
 
 .footer-div {
@@ -170,7 +191,11 @@ footer {
 }
 
 .footer-header {
+    margin-top: 30px;
     padding: 8px;
+}
+
+strong {
     color: #000 !important;
 }
 
@@ -179,13 +204,14 @@ footer {
 }
 
 h6 {
-    margin-top: 20px !important;
+    /* margin-top: 20px !important; */
     color: #323a25;
     ;
 }
 
 .text-secondary {
     text-transform: uppercase;
+    font-size: 1.3rem;
 }
 
 .optionalParent {
