@@ -69,7 +69,7 @@ body {
 }
 
 .logo-font {
-    color: #504d2c;
+    color: #f5e323;
 }
 
 .logo {
@@ -261,4 +261,13 @@ i {
 
 .dropdown-menu {
     background-color: #d3dbde !important;
+}
+
+#delivery-banner {
+    background-color: #144945;
+}
+
+.card-img-top,
+.pro-name {
+    margin-top: 100px !important;
 }
