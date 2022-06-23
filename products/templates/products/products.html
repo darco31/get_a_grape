@@ -28,11 +28,11 @@
                         <div class="card h-100 border-0">
                             <!-- card setup for products-top part for images -->
                             {% if product.image %}
-                            <a href="">
+                            <a href="{% url 'product_detail' product.id %}">
                                 <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top img-fluid">
                             </a>
                             {% else %}
-                            <a href="">
+                            <a href="{% url 'product_detail' product.id %}">
                                 <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}" class="card-img-top img-fluid">
                             </a>
                             {% endif %}
