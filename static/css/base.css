@@ -31,6 +31,8 @@ body {
     width: 1.5rem;
 }
 
+/* Overlay for products page to give a white background */
+
 .overlay {
     background-color: white;
     height: 100%;
