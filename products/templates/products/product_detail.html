@@ -18,11 +18,11 @@
             {% if product.image %}
             <!-- Links to an image in a new window -->
             <a href="{{ product.image.url }}" target="_blank">
-                <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top img-fluid">
+                <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top mt-5 img-fluid">
             </a>
             {% else %}
             <a href="">
-                <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}" class="card-img-top img-fluid">
+                <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}" class="card-img-top mt-5 img-fluid">
             </a>
             {% endif %}
         </div>
