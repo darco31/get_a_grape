@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;500&display=swap');
 
 :root {
-    --main-radius: 5px;
-    --main-padding: 5px;
-    --text-color: #66fcf1;
-    --text-second-color: #fff;
+    --text-primary-color: #144945;
+    --text-secondary-color: #fff;
     --text-third-color: #000000;
     --text-forth-color: #C5C6C7;
-    --progess-bar-color: #144945;
 }
 
 html {
@@ -18,7 +15,7 @@ body {
     background: url('/media/home-page.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
+    color: #555555;
     font-family: 'Roboto', sans-serif;
 }
 
