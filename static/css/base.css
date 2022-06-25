@@ -295,3 +295,13 @@ i {
 /* .card {
     width: 00px;
 } */
+
+.btn-button {
+    width: 5% !important;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.btt-link:hover {
+    text-decoration: none !important;
+}
