@@ -317,5 +317,19 @@ i {
 /* Bag styles */
 
 .container {
-    margin-top: 300px;
+    /* margin-top: 300px; */
+}
+
+/* Styles for badges */
+
+.badge {
+    border: black solid 1px;
+    padding: 10px !important;
+    color: #144945;
+    font-size: 0.8rem !important;
+    box-shadow: 2px 2px #41855f;
+}
+
+.badge:hover {
+    box-shadow: none;
 }
