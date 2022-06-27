@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 
-def view_shopping_bag(request):
+def view_bag(request):
 
     """
     A view to return the bag page

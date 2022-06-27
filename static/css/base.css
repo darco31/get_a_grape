@@ -313,3 +313,9 @@ i {
 .products-home {
     text-decoration: none !important;
 }
+
+/* Bag styles */
+
+.container {
+    margin-top: 300px;
+}
