@@ -14,7 +14,7 @@ def add_to_bag(request, item_id):
 
     """
     Add a quantity of products to the users
-    shopping bags
+    shopping bags and store in the session
     """
 
     quantity = int(request.POST.get('quantity'))
@@ -28,7 +28,5 @@ def add_to_bag(request, item_id):
         bag[item_id] = quantity
 
     request.session['bag'] = bag
-    print(request.session['bag'])
     return redirect(redirect_url)
-
 
