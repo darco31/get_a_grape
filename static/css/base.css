@@ -316,8 +316,18 @@ i {
 
 /* Bag styles */
 
-.container {
-    /* margin-top: 300px; */
+#bag-heading {
+    color: #144945;
+}
+
+#shopping-link {
+    color: #144945;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 /* Styles for badges */
@@ -332,4 +342,9 @@ i {
 
 .badge:hover {
     box-shadow: none;
+    background-color: #232b2e !important;
+}
+
+.category-badge {
+    padding: 20px;
 }
