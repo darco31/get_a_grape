@@ -19,6 +19,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+hr {
+    border: none !important;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -316,8 +320,19 @@ i {
 
 /* Bag styles */
 
+.bag-contents-header {
+    color: #144945;
+    text-transform: uppercase;
+}
+
+.product-head {
+    text-align: center;
+}
+
 #bag-heading {
     color: #144945;
+    text-align: center;
+    padding: 20px;
 }
 
 #shopping-link {
@@ -328,6 +343,10 @@ i {
     border: 1px solid black;
     padding: 10px;
     border-radius: 10px;
+}
+
+.product_name strong {
+    color: #144945 !important;
 }
 
 /* Styles for badges */
