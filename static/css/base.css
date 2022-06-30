@@ -325,7 +325,8 @@ i {
     text-transform: uppercase;
 }
 
-.product-head {
+.product-head,
+.qty-head {
     text-align: center;
 }
 
