@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, HttpResponse
 
 
 def view_bag(request):
@@ -41,8 +41,21 @@ def adjust_bag(request, item_id):
         bag[item_id] = quantity
     elif quantity > 0:
         del bag[item_id]
+        if not bag[item_id]:
+            bag.pop(item_id)
     else:
         bag.pop(item_id)
 
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
+
+
+def remove_item(request, item_id):
+    """ Remove item's quantity in bag """
+
+    bag = request.session.get('bag', {})
+    bag.pop(item_id)
+
+    request.session['bag'] = bag
+    return HttpResponse(status=200)
+
