@@ -146,7 +146,9 @@ a.category-badge>span.badge:hover {
     right: 10px;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
 
@@ -243,7 +245,6 @@ strong {
 h6 {
     /* margin-top: 20px !important; */
     color: #323a25;
-    ;
 }
 
 .text-secondary {

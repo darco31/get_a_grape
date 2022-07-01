@@ -48,7 +48,7 @@
                         </td>
                         <!-- Adding form to allow the user to update the amounts from the shopping bag page -->
                         <td class="py-3">
-                            <form class="form update-form" action="" method="post">
+                            <form class="form update-form" action="{% url 'adjust_bag' item.item_id %}" method="post">
                                 {% csrf_token %}
                                 <div class="form-group">
                                     <div class="input-group">
@@ -70,6 +70,8 @@
                                     </div>
                                 </div>
                             </form>
+                            <a class="update-link text-info">Update</a>
+                            <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-size="{{ item.size }}">Remove</a>
                         </td>
                         <td class="py-3">
                             <p class="my-0">{{ item.product.price }}</p>
@@ -118,4 +120,34 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+<!-- The below will have the JS work in the pages where linked -->
+
+{% block postloadjs %}
+{{ block.super }}
+{% include 'products/includes/quantity_input_script.html' %}
+
+<!-- Update and remove items from bag -->
+<script type="text/javascript">
+    $('.update-link').click(function(e) {
+        var form = $(this).prev('.update-form');
+        form.submit();
+    })
+
+    $('.remove-item').click(function(e) {
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var url = `/bag/remove/${itemId}`;
+        var data = {
+            'csrfmiddlewaretoken': csrfToken
+        };
+
+        $.post(url, data)
+            .done(function() {
+                location.reload();
+            });
+
+    })
+</script>
 {% endblock %}
