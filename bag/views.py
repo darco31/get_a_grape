@@ -44,7 +44,7 @@ def adjust_bag(request, item_id):
 
     if quantity > 0:
         bag[item_id] = quantity
-        messages.success(request, f'Added {product.name} to bag')
+        messages.success(request, f'Updated {product.name} in bag')
     elif quantity > 0:
         del bag[item_id]
         if not bag[item_id]:
