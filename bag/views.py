@@ -1,3 +1,8 @@
+"""
+Imports from django to use
+in views
+"""
+
 from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
 from django.contrib import messages
 
@@ -17,7 +22,8 @@ def add_to_bag(request, item_id):
 
     """
     Add a quantity of products to the users
-    shopping bags and store in the session
+    shopping bags and store in the session.
+    Product required for messages.
     """
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
@@ -66,4 +72,3 @@ def remove_item(request, item_id):
 
     request.session['bag'] = bag
     return HttpResponse(status=200)
-
