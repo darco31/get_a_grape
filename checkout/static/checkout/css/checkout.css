@@ -22,16 +22,51 @@
 }
 
 .stripe-style-input::placeholder {
-    color: #940216;
+    color: #144945;
+    opacity: 0.8;
 }
 
 .fieldset-label {
     position: relative;
     right: .5rem;
+    color: #144945;
 }
 
 #payment-form .form-control,
 #card-element {
     color: #000;
     border: 1px solid #000;
+}
+
+hr {
+    border-top: 1px solid black !important;
+}
+
+#submit-button,
+.btn-adjust {
+    text-transform: uppercase;
+    display: inline-block;
+    background-color: #144945;
+    border-radius: 10px;
+    border: none;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.3rem;
+    width: 200px;
+    transition: all 0.5s;
+    margin: 5px;
+}
+
+#submit-button:hover,
+.btn-adjust:hover {
+    opacity: 0.8;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+.submit-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
