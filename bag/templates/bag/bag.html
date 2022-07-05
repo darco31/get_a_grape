@@ -24,15 +24,15 @@
     <div class="row">
         <div class="col">
             {% if bag_items %}
-            <div class="table-responsive rounded">
+            <div class="table-responsive">
                 <table class="table table-sm">
                     <thead class="bag-contents-header">
                         <tr>
-                            <th class="product-head" scope="col">Product Info</th>
-                            <th scope="col">Product name</th>
-                            <th scope="col">Price</th>
-                            <th class="qty-head" scope="col">Quantity</th>
-                            <th scope="col">Subtotal</th>
+                            <th class="py-3 product-head" scope="col">Product Info</th>
+                            <th class="py-3" scope=" col">Product name</th>
+                            <th class="py-3" scope="col">Price</th>
+                            <th class="py-3 qty-head" scope="col">Quantity</th>
+                            <th class="py-3 qty-head" scope="col">Subtotal</th>
                         </tr>
                     </thead>
 
@@ -71,43 +71,42 @@
                                     </div>
                                 </div>
                             </form>
-                            <a class="update-link text-info">Update</a>
-                            <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-size="{{ item.size }}">Remove</a>
+
+                            <a class="update-link ml-4">Update</a>
+                            <a class="remove-item ml-4" id="remove_{{ item.item_id }}">Remove</a>
+
                         </td>
                         <td class="py-3">
-                            <p class="my-0">{{ item.product.price | calculate_subtotal:item.quantity }}</p>
+                            <p class="my-0 text-center">{{ item.product.price | calculate_subtotal:item.quantity }}</p>
                         </td>
                     </tr>
                     {% endfor %}
                     <tr>
-                        <td class="pt-5 text-center" colspan="5">
-                            <h6 class="bag-total"><strong>Bag Total: €{{ total|floatformat:2 }}</strong></h6>
-                            <h6 class="mt-3">Delivery: €{{ delivery|floatformat:2 }}</h6>
-                            <h4 class="mt-5"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
+                        <td class="bag-total-head" colspan="5">
+                            <h6 class="bag-total">Bag Total: €{{ total|floatformat:2 }}</h6>
+                            <h6 class="bag-total mt-4">Delivery: €{{ delivery|floatformat:2 }}</h6>
+                            <h4 class="bag-total mt-5">Grand Total: €{{ grand_total|floatformat:2 }}
+                            </h4>
                             {% if free_delivery_delta > 0 %}
                             <p class="mb-1 text-danger">
-                                You could get free delivery by spending just <strong>€{{ free_delivery_delta }}</strong> more!
+                                You could get free delivery by spending just <strong id="free_del">€{{ free_delivery_delta }}</strong> more!
                             </p>
                             {% endif %}
                         </td>
                     </tr>
-                    <tr>
-                        <td class="text-center" colspan="5">
-                            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn lg">
-                                <span class="icon">
-                                    <i class="fas fa-chevron-left"></i>
-                                </span>
-                                <span class="text-uppercase">Keep Shopping</span>
-                            </a>
-                            <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
-                                <span class="text-uppercase">Secure Checkout</span>
-                                <span class="icon">
-                                    <i class="fas fa-lock"></i>
-                                </span>
-                            </a>
-                        </td>
-                    </tr>
                 </table>
+                <div class="table-buttons">
+                    <a href="{% url 'products' %}" class="btn btn lg">
+                        <span class="checkout-button1">Keep Shopping
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                    </a>
+                    <a href="{% url 'checkout' %}" class="checkout-btn btn-lg">
+                        <span class="checkout-button">Secure Checkout
+                            <i class="fas fa-lock"></i>
+                        </span>
+                    </a>
+                </div>
             </div>
             {% else %}
             <p class="lead mb-5">Your bag is empty.</p>
@@ -134,6 +133,7 @@
     $('.update-link').click(function(e) {
         var form = $(this).prev('.update-form');
         form.submit();
+        console.log("working")
     })
 
     $('.remove-item').click(function(e) {
