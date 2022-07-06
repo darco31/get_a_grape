@@ -14,5 +14,6 @@ class StripeWH_Handler:
         Unknown/generic and unexpected webhook
         """
         return HttpResponse(
-            content=f'Webhook received: {event["type"]}'
+            content=f'Webhook received: {event["type"]}',
+            status=200
         )
