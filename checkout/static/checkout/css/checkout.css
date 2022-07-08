@@ -2,7 +2,7 @@
 .stripe-style-input {
     box-sizing: border-box;
     height: 40px;
-    padding: 10px 12px;
+    padding: 5px 12px;
     border: 1px solid transparent;
     border-radius: 0px;
     background-color: white;
@@ -40,6 +40,16 @@
 
 hr {
     border-top: 1px solid black !important;
+}
+
+select,
+select option {
+    color: #144945 !important;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #aab7c4 !important;
 }
 
 #submit-button,
