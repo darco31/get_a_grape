@@ -1,3 +1,5 @@
+""" Imports for webhooks"""
+
 from django.conf import settings
 from django.http import HttpResponse
 from django.views.decorators.http import require_POST
@@ -21,12 +23,12 @@ def webhook(request):
 
     try:
         event = stripe.Webhook.construct_event(
-        payload, sig_header, wh_secret
+            payload, sig_header, wh_secret
         )
-    except ValueError as e:
+    except ValueError:
         # Invalid payload
         return HttpResponse(status=400)
-    except stripe.error.SignatureVerificationError as e:
+    except stripe.error.SignatureVerificationError:
         # Invalid signature
         return HttpResponse(status=400)
     except Exception as e:
@@ -37,7 +39,7 @@ def webhook(request):
 
     # Map hook events to relevant handler functions
     event_map = {
-        'payment_intent.succeeded' : handler.handle_payment_intent_succeeded,
+        'payment_intent.succeeded': handler.handle_payment_intent_succeeded,
         'payment_intent.payment_failed': handler.handle_payment_intent_failed,
     }
 
