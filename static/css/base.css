@@ -476,3 +476,28 @@ i {
 .toast-capper {
     height: 2px;
 }
+
+/* All auth styles */
+
+.allauth-form-inner-content p {
+    margin-top: 1.5rem;
+    color: #144945;
+}
+
+.allauth-form-inner-content input {
+    border-color: #000;
+    border-radius: 0;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #144945;
+}
+
+
+.login-header {
+    margin-top: 173px;
+}
