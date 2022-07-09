@@ -1,108 +1,400 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Get A Grape - Stephen D'Arcy
 
-Welcome Stephen,
+![Home Page](static/img/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# Table of contents
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+1. [Overview](#Overview)
+    * [About](#about)
+    * [Scope](#Scope)
+    * [Agile](#Agile)
 
-## Gitpod Reminders
+2. [User Experience](#UserExperience)
+    * [Project Goals](#Project-goals)
+    * [User Stories](#Userstories)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+3. [Features](#Features)
+    * [Colors](#Colors)
 
-`python3 -m http.server`
+4. [FlowChart Data Structure](#Flow-chart-and-data-structure)
 
-A blue button should appear to click: _Make Public_,
+5. [WireFrames](#Wireframes)
 
-Another blue button should appear to click: _Open Browser_.
+6. [Technology Used In Design](#Technology-Used-In-Design)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+7. [Testing](#Testing)
+    * [HTML Validator](#HTML-Validator)
+    * [CSS Validator](#CSS-Validator)
+    * [PEP 8](#PEP8)
+    * [Automatic testing](#Automatic-testing)
 
-A blue button should appear to click: _Make Public_,
+8. [Deployment](#Deployment)
 
-Another blue button should appear to click: _Open Browser_.
+9. [Credits](#Credits)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+10. [Issues](#Issues)
 
-To log into the Heroku toolbelt CLI:
+# The TuneShack
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Overview
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### About
+* The Tuneshack is a blog website developed to encourage lovers of all types and genres of music to sign up and talk freely about their love of music, their favorite bands or the best concert they have ever been to. The blog can used to post dates and venues for upcoming concerts. Every body is welcome and encouraged to post and interact with each others posts weather leaving comments or just liking a post.
 
-------
+### Scope
 
-## Release History
+* The initial scope of the project is to develop a website that is primarily used as a blog site for music lovers to use. There is future scope to extend the site to be more commercial in use i.e selling merchandise, tickets, bookings through third party sites.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* The first release wil include:
+    - A home page for everyone to view posts and comment.
+    - A sign up page /system for new users.
+    - users can log in and comment and like posts.
+    - Once logged in a user can update or delete their posts.
+    - Authentication used to determine who is logged and who can post/update or delete.
+    - users can log out at any time.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+* Future development
+    - Nested comments and a like functionality
+    - Images included in comments
+    - Possibility of an online store
+    - Selling tickets through 3rd party official sites.
+    - Search functionality
+    - Email verification/password update
+    - Categories to pick from
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## Agile
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+![Agile](docs/user_stories.PNG)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+# User Experience
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## Project goals
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+* The overall goal of the project is to display my competency in being able to create a website/app using the Django framework in conjunction with Python, Javascript, HTML and CSS. 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+* The users of the site will be able to view posts made by all but only create , update and delete posts made by themselves once they have signed up and logged in. Once logged out they will only be able to comment and read posts. Users will be limited to their own content for any updates or removals.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## User Stories
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Sign Up
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+* As a Site User I can sign up to the app so that I can login and make posts and comment/like other posts
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Delete Posts
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+* As a User I can delete my posts so that they can be removed if required
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Edit a post
 
-------
+* As a User I can delete my posts so that they can be removed if required
 
-## FAQ about the uptime script
+### View a post
 
-**Why have you added this script?**
+* As a User I can view and click on posts so that I can read through them weather logged in or logged out
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Like/unlike posts
 
-**How will this affect me?**
+* As a User I can **like and unlike posts ** so that there is site interaction
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Manage Posts
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+* As a site owner I can manage users and their posts so that I can manage content if required
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Make comments
 
-**So….?**
+* As a user I can make comments so that give feedback to other posts
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
+# Features
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Home Page
+![Home Page](static/img/home.PNG)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+* User can open the webpage from the URL provided and do not need to be registered to view the posts on the site. If not logged in the have the option to sign up or if already 
+signed up to login. No unauthorized users can comment or like the posts already shown.
 
-**Anything more?**
+### Posts Page
+![Posts Page](static/img/post_page.PNG)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+* The site user can view posts , add comments or likes if logged in. They can delete their own posts and update the posts but cant alter or delete other users posts.
 
----
+### Posts with Comments
+![Comments Page](static/img/comment_likes.PNG)
 
-Happy coding!
+* The user can view the comments here.
+
+### Login Page
+![Login Page](static/img/login.PNG)
+
+* The user can login from here.
+
+### Sign up Page
+![Sign Up Page](static/img/signup.PNG)
+
+* The user can sign up for the site here.
+
+# Colors
+
+* The inspiration for the colors used on the website where taken from [Canva](https://www.canva.com/)
+
+![Colors](docs/colors.PNG)
+
+#### [Back to content](#table-of-contents)
+
+# FlowChart Data Structure
+
+* Tuneshack flowcart
+
+![Flow Chart TuneShack](docs/Flowchart.PNG)
+
+* Tuneshack data model
+
+![Data Model TuneShack](docs/datamodel.PNG)
+
+#### [Back to content](#table-of-contents)
+
+## Wireframes
+
+* All wireframes can be found [here](docs/project_four.pdf)
+
+#### [Back to content](#table-of-contents)
+
+# Technology-Used-In-Design
+
+* Django framework
+* HTML5
+* CSS3
+* Javascript
+    - Used to implement the change in year on in the copyright section of the footer.
+    - Also used to hid the field for the author name in the add post section, if this was visible the ID would appear and cause issues.
+    - Used to remove the alert from the screens.
+* Python
+    - Used in conjunction with the Django framework to implement the website.
+* Heroku
+    - Use to deploy the project on to the live site.
+
+# Frameworks
+
+* [Django](https://docs.djangoproject.com/en/4.0/)
+    - Used to create the URLS, Views, Forms and models in the site. Also uses the Django Template Language within the HTML files.
+* [Bootstrap](https://getbootstrap.com/)
+    - Bootstrap is mainly used to style the page and add responsiveness to the website.
+* [Cloudinary](https://cloudinary.com/)
+    - Cloudinary is used to store all the images used withing the project.
+* [Google Fonts](https://fonts.google.com/)
+    - Used as the main fonts throughout the project.
+* [Git](https://git-scm.com/)
+    - Git is used for version control
+* [Github](https://github.com/)
+    - Github is being used to write the code and store the project as a whole.
+* [Am I responsive](http://ami.responsivedesign.is/)
+    - Used to display the main image in the README file.
+* [Font Awesome](https://fontawesome.com/)
+    - Font awesome is used for the like and dislike icons.
+* [All Auth](https://django-allauth.readthedocs.io/en/latest/)
+    - All Auth used for authentication od website.
+* [PostGres](https://www.postgresql.org/download/)
+    - Database used through heroku.
+* [SQLite](https://django-allauth.readthedocs.io/en/latest/)
+    - https://www.sqlite.com/index.html
+* [SmartDraw](https://django-allauth.readthedocs.io/en/latest/)
+    - To draw out the database schema.
+* [Balsamiq](https://django-allauth.readthedocs.io/en/latest/)
+    - To create the wireframes.
+
+## Requirements file
+* asgiref==3.5.0
+* cloudinary==1.29.0
+* dj-database-url==0.5.0
+* dj3-cloudinary-storage==0.0.6
+* Django==3.2
+* django-allauth==0.50.0
+* django-ckeditor==6.4.0
+* django-crispy-forms==1.14.0
+* django-js-asset==2.0.0
+* gunicorn==20.1.0
+* oauthlib==3.2.0
+* psycopg2==2.9.3
+* PyJWT==2.3.0
+* python3-openid==3.2.0
+* pytz==2022.1
+* requests-oauthlib==1.3.1
+* sqlparse==0.4.2
+
+
+#### [Back to content](#table-of-contents)
+
+# Testing (Manual)
+
+## I have tested the full CRUD functionality on the project.
+
+### Users can:
+
+- Create posts by clicking Add Post.
+- A user can delete or edit their own posts.
+- All users of the website can read posts.
+- A user can contact the site owner.
+
+### HTML Validator
+
+![HTML Validations](docs/htmlvals.PNG)
+
+### CSS-Validator
+
+![CSS Validations](docs/css_validation.PNG)
+
+### PEP8
+
+* All PEP8 validations can be found [here](docs/PEP8.pdf)
+
+### Lighthouse Scores
+
+![LightHouse](docs/lighthouse.PNG)
+
+![LightHouse mobile](docs/lighthouse_mobile.PNG)
+
+### Javascript-Validations
+
+![Javascript](docs/js_vals.PNG)
+
+# Automatic-testing
+
+* I have performed some basic automatic tests as shown below on the forms and views.
+
+![Views](docs/test_views.PNG)
+
+![Forms](docs/forms_test.PNG)
+
+![Test Results](docs/test_results.PNG)
+
+* I installed Coverage with pip3 install coverage and ran the program in the terminal with coverage run manage.py test. The file was generated with coverage html and the results can be found in the htmlcov file in the index.html file.
+
+
+#### [Back to content](#table-of-contents)
+
+# Deployment
+
+The live deployed application can be found here [TuneShack](https://tuneshack22.herokuapp.com/)
+
+### Gitpod and GitHub
+
+To use the terminal designed by The Code Institute I used the [Code Institute Full Template](https://github.com/Code-Institute-Org/gitpod-full-template).
+This allows the code that is used to run the terminal be viewed in the browser.
+
+### Steps:
+
+* Click create new repository.
+* Give the repository a name.
+* Under Repository template pick the [Code Institute Full Template](https://github.com/Code-Institute-Org/gitpod-full-template).
+* Click create repository
+- Use GIT ADD .
+- GIT COMMIT -m "Comments"
+- GIT PUSH
+- To commit the code and push to Github
+
+## Forking the Github Repository
+
+- Locate the desired Github repository.
+- In the top right corner click the Fork button.
+- The repository has been forked and you can now work 0on the copy.
+
+## Cloning a Github repository
+
+- Locate the desired Github repository.
+- Use the code button and copy the link.
+- Open Gitpod and select your directory where you want the clone to be created.
+- Type git clone in the terminal and paste the link in.
+- The clone will be created
+
+
+### Creating an Application with Heroku
+
+I used the video tutorial provided by The Code Institute to create a Heroku account, add the details of the app and deploy the application to a live environment.
+
+- Log in to Heroku [Heroku](https://dashboard.heroku.com/)
+- Click New 
+- Give the app a name and choose the region
+- Click on settings first and set the Reveal Config Vars
+- Click Deploy at the top to go to the Deployment settings
+- Choose GiHub as the deployment method
+- Search for your app and connect
+- Use Automatic deploys if you would like a new build when changes are pushed to GitHub from Gitpod
+- Use Manual deploy for a new build every time this button is clicked.
+- Once completed click View App
+
+### Updated as Heroku had a security breach and deployment was needed to be completed from the Github CLI.
+
+* Deploying your app to heroku
+1. Login to heroku and enter your details.
+command: heroku login -i
+2. Get your app name from heroku.
+command: heroku apps
+3. Set the heroku remote. (Replace <app_name> with your actual app name)
+command: heroku git:remote -a <app_name>
+4. Add, commit and push to github
+command: git add . && git commit -m "Deploy to Heroku via CLI"
+5. Push to both github and heroku
+command: git push origin main
+command: git push heroku main
+
+
+* MFA/2FA enabled?
+1. Click on Account Settings (under the avatar menu)
+2. Scroll down to the API Key section and click Reveal. Copy the key.
+3. Enter the command: heroku_config , and enter your api key you copied when prompted
+4. Complete the steps above, if you see an input box at the top middle of the editor...
+ a. enter your heroku username
+ b. enter the api key you just copied
+
+#### [Back to content](#table-of-contents)
+
+# Credits
+
+### Reviews
+* Album reviews taken for educational purpose only from https://www.bbc.co.uk/music/reviews/ and all reviews are credited to their respective owners on the site.
+
+### Crispy forms instruction
+* https://www.geeksforgeeks.org/styling-django-forms-with-django-crispy-forms/
+
+### Django authentication help
+
+* https://django-allauth.readthedocs.io/en/latest/
+
+### Likes/Unlike tutorials
+
+* https://dev.to/radualexandrub/how-to-add-like-unlike-button-to-your-django-blog-5gkg
+
+### Messages
+
+* https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/ae7923cfce7f4653a3af9f51825d2eba/?child=first
+
+### Slack Community
+
+* davidwatters_5P and Daniel_C_5p for their hep on collecting static files.
+* Matt Bodden_5P on help with validating HTML/css WITH Django included.
+
+* My Mentor Miguel Martinez for his support through the whole process.
+
+* The Slack community as a whole for being awesome.
+
+#### [Back to content](#table-of-contents)
+
+# Issues/Bugs
+
+### Static files were not loading in the productions environment.
+
+Fix:
+* Move Docs in to the main folder from the static folder and re run collect static. This worked and all files are loading in Heroku.
+
+### Messages were not displaying correctly.
+
+FIX:
+* Login and log out message were not appearing when the connected buttons were clicked byt the user. I installed all auth and this fixed the issues.
+
+### HTML Validator failing.
+
+FIX:
+* Removed stray div tag from the home.html page.
+
+#### [Back to content](#table-of-contents)
