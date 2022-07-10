@@ -20,3 +20,7 @@
 #id_default_country option:first-child {
     color: #aab7c4;
 }
+
+#bag-heading {
+    margin-top: 3.5rem;
+}
