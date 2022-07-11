@@ -1,0 +1,17 @@
+Hi {{ order.full_name }}
+
+This is your conformation of your order for Get A Grape wine store.
+
+Order Number: {{ order.order_number }}
+Delivery: {{ order.delivery_cost }}
+Total: {{ order.grand_total }}
+
+Your order will be shipped to {{ order.street_address1 }} in {{ order.town_or_city }}, {{ order.country }}.
+
+If you have any queries or issues please contact us at {{ contact_email }}
+
+Thank you for continued custom and we hope to see you soon.
+
+Sincerely,
+
+The Get A Grape team
