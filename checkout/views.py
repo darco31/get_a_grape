@@ -1,6 +1,7 @@
 """
 All imports required for views to function
 """
+import json
 from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from django.views.decorators.http import require_POST
 from django.contrib import messages
@@ -9,8 +10,9 @@ import stripe
 from bag.contexts import bag_contents
 from products.models import Product
 from .forms import OrderForm
+from profiles.forms import UserProfileForm
+from profiles.models import UserProfile
 from .models import Order, OrderLineItem
-import json
 
 
 @require_POST
@@ -126,6 +128,26 @@ def checkout_success(request, order_number):
     """
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
+
+    profile = UserProfile.objects.get(user=request.user)
+
+    order.user_profile = profile
+    order.save()
+
+    if save_info:
+        profile_data = {
+            'default_mobile_number': order.mobile_number,
+            'default_country': order.country,
+            'default_postcode': order.postcode,
+            'default_town_or_city': order.town_or_city,
+            'default_street_address1': order.street_address1,
+            'default_street_address2': order.street_address2,
+            'default_county': order.county,
+        }
+        user_profile_form = UserProfileForm(profile_data, instance=profile)
+        if user_profile_form.is_valid():
+            user_profile_form.save()
+
     messages.success(request, f'Order completed \
         Your order number is {order_number}. A conformation \
         email will be sent to {order.email}')
