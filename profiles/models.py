@@ -8,7 +8,7 @@ from django.dispatch import receiver
 
 class UserProfile(models.Model):
     """
-    User profile model for maintaining 
+    User profile model for maintaining
     delivery information
     """
     user = models.OneToOneField(User, on_delete=models.CASCADE)
