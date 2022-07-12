@@ -154,7 +154,7 @@ a.category-badge>span.badge:hover {
 
 /* Product form */
 
-.select-img-button {
+.btn-file {
     position: relative;
     overflow: hidden;
 }
@@ -178,10 +178,6 @@ a.category-badge>span.badge:hover {
     background-color: #dc3545;
     border-color: #dc3545;
     border-radius: 0;
-}
-
-.select-img-button {
-    background-color: #144945;
 }
 
 /* -------------------------------- Media Queries */
