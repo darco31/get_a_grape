@@ -1,8 +1,10 @@
+""" Views imports for products"""
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
+from .forms import ProductForm
 
 
 def all_products(request):
@@ -16,7 +18,8 @@ def all_products(request):
     sort = None
     direction = None
 
-    # Below is coded to allow sorting on the products by price, category and rating
+    # Below is coded to allow sorting on the products by price, category and \
+    # rating
     if request.GET:
 
         if 'sort' in request.GET:
@@ -27,7 +30,7 @@ def all_products(request):
                 products = products.annotate(lower_name=Lower('name'))
             if sortkey == 'category':
                 sortkey = 'category__name'
-                
+
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
@@ -73,3 +76,27 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
+
+
+def add_product(request):
+    """ 
+    Adding products to the store
+    """
+
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'You have added a new product')
+            return redirect(reverse('add_product'))
+        else:
+            messages.error(request, 'Failed to add product')
+    else:
+        form = ProductForm()
+        
+    template = 'products/add_product.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
