@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-sjj#d87b1)!3do07s-$t$g0gj&(blhpompx$^=&rjjhob@_2)^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['get-a-grape.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -110,16 +110,20 @@ WSGI_APPLICATION = 'get_a_grape.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+if 'DATABASE_URL' in os.environ:
 
-# DATABASES = {
-#     'default': dj_database_url.parse('postgres://ioxmyjwxvlbsrg:d8556da449f5f1ef0adf13c04b50ba0f6807874bfdc0c7697e703ad14eaa32f4@ec2-52-48-159-67.eu-west-1.compute.amazonaws.com:5432/de1c9gnrsqvacf')
-# }
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
