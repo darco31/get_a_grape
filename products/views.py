@@ -79,7 +79,7 @@ def product_detail(request, product_id):
 
 
 def add_product(request):
-    """ 
+    """
     Adding products to the store
     """
 
@@ -93,7 +93,7 @@ def add_product(request):
             messages.error(request, 'Failed to add product')
     else:
         form = ProductForm()
-        
+
     template = 'products/add_product.html'
     context = {
         'form': form,
