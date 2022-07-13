@@ -85,7 +85,7 @@ hr {
 }
 
 .main-logo-link {
-    background: url('/media/grape4.png') no-repeat center center fixed;
+    background-image: url('/media/grape4.png') no-repeat center center fixed;
     width: fit-content;
     font-weight: bold;
 }
