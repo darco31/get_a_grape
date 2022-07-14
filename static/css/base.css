@@ -81,7 +81,7 @@ hr {
     color: #000;
     font-weight: 600 !important;
     opacity: 0.8;
-    margin-top: 150px;
+    margin-top: 200px;
 }
 
 .main-logo-link {
@@ -550,3 +550,5 @@ i {
 .delete-link:hover {
     text-decoration: none;
 }
+
+/* FAQ styles */
