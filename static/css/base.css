@@ -552,3 +552,44 @@ i {
 }
 
 /* FAQ styles */
+
+.card {
+    background-color: #d3dbde !important;
+    color: #212529;
+    border-radius: 5px !important;
+}
+
+.btn-link {
+    color: #144945 !important;
+}
+
+.btn-link:hover {
+    text-decoration: none !important;
+}
+
+#faq-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #144945;
+    background-color: #d3dbde;
+    width: 10%;
+    border-radius: 10px;
+    padding: 3px;
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+#faq-button:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+/* Takes away the blue border on bootstrap buttons  */
+/* https: //zditect.com/article/53578202.html */
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}

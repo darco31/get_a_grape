@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page-header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<!-- <div class="overlay-faq"></div> -->
+
+<div class="container h-100 faq-cont">
+    <div class="row">
+        <div class="col">
+            <h2 class="logo text-center mb-5">Shipping & Returns</h2>
+        </div>
+    </div>
+
+    <!-- First FAQ -->
+
+    <div class="accordion" id="accordion-faq">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed icon" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        SHIPPING
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-faq">
+                <div class="card-body">
+                    Standard delivery charges on all orders under 40 Euro. Delivery will take between 2-3 days. Please
+                    note that a signature may be required upon receipt of your delivery with proof of age being over 21.
+                </div>
+            </div>
+        </div>
+        <!-- Second FAQ -->
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h2 class=" mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed icon" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        RETURNS
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-faq">
+                <div class="card-body">
+                    You can only return your order if the Get A Grape bottles are unopened and sealed. Due to health &
+                    safety reasons, we cannot accept any goods that have been opened. If you wish to return the
+                    bottle(s), you can notify us within 14 days of receiving your order that you have changed your mind.
+                    Please keep in mind you will have to cover the return shipping cost.
+
+                    Please use the contact form to inform us of the returns. You need to return the bottle(s) to us
+                    within 14 days of notifying us.
+
+                    If the goods are re-sellable we will reimburse your order.
+
+                    If your product is faulty or damaged, you can ask for an exchange or a refund within 30 days of
+                    receiving your order and we will pay for return postage.
+                </div>
+            </div>
+        </div>
+        <!-- Third FAQ -->
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h2 class=" mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed icon" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                        REFUNDS
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-faq">
+                <div class="card-body">
+                    Please inform us by email of the reason for the returns and we will handle from there. If any
+                    further information is required we will be in contact. Please take in to consideration
+                    the below requirements when returning products.
+                    <br><br>
+                    1. Please send your returns with a reputable company and make sure the product is well packaged.
+                    <br>
+                    2. If possible please include a picture of the product with or without the defect.
+                </div>
+            </div>
+        </div>
+        <!-- Fourth FAQ -->
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h2 class=" mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed icon" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                        CANCELING AN ORDER
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion-faq">
+                <div class="card-body">
+                    We work quickly to pick and pack your items. If possible we will endeavour to cancel your order or
+                    change it. If tghe order has been dispatched you can always return the order to us.
+                </div>
+            </div>
+        </div>
+        <!-- Fifth FAQ -->
+        <div class="card">
+            <div class="card-header" id="headingFive">
+                <h2 class=" mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed icon" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                        ANY OTHER QUERIES
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion-faq">
+                <div class="card-body">
+                    Please use our contact page if you require any other queries to be answered.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<h4>
+    <a href="{% url 'products' %}" id="faq-button">Back to Products</a>
+</h4>
+{% endblock %}

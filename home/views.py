@@ -14,3 +14,10 @@ def faqs(request):
     Returns faq page
     """
     return render(request, 'home/faqs.html')
+
+
+def shipping(request):
+    """
+    Returns shipping page
+    """
+    return render(request, 'home/shipping.html')

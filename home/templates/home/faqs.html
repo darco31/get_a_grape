@@ -10,12 +10,12 @@
 {% endblock %}
 
 {% block content %}
-<div class="overlay"></div>
+<!-- <div class="overlay-faq"></div> -->
 
 <div class="container h-100 faq-cont">
     <div class="row">
         <div class="col">
-            <h2 class="logo text-center">All Your Questions Answered</h2>
+            <h2 class="logo text-center mb-5">All Your Questions Answered</h2>
         </div>
     </div>
 
@@ -52,7 +52,7 @@
                 </div>
             </div>
         </div>
-        <!-- Second FAQ -->
+        <!-- Third FAQ -->
         <div class="card">
             <div class="card-header" id="headingThree">
                 <h2 class=" mb-0">
@@ -67,7 +67,7 @@
                 </div>
             </div>
         </div>
-
+        <!-- Fourth FAQ -->
         <div class="card">
             <div class="card-header" id="headingFour">
                 <h2 class=" mb-0">
@@ -82,7 +82,7 @@
                 </div>
             </div>
         </div>
-
+        <!-- Fifth FAQ -->
         <div class="card">
             <div class="card-header" id="headingFive">
                 <h2 class=" mb-0">
@@ -98,7 +98,7 @@
                 </div>
             </div>
         </div>
-
+        <!-- Sixth FAQ -->
         <div class="card">
             <div class="card-header" id="headingSix">
                 <h2 class=" mb-0">
@@ -115,7 +115,7 @@
                 </div>
             </div>
         </div>
-
+        <!-- Seventh FAQ -->
         <div class="card">
             <div class="card-header" id="headingSeven">
                 <h2 class=" mb-0">
@@ -130,7 +130,7 @@
                 </div>
             </div>
         </div>
-
+        <!-- Eight FAQ -->
         <div class="card">
             <div class="card-header" id="headingEight">
                 <h2 class=" mb-0">
@@ -147,7 +147,9 @@
                 </div>
             </div>
         </div>
-
     </div>
 </div>
+<h4>
+    <a href="{% url 'products' %}" id="faq-button">Back to Products</a>
+</h4>
 {% endblock %}
