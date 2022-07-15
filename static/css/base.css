@@ -219,10 +219,38 @@ a.category-badge>span.badge:hover {
 
 @media (max-width: 600px) {
     .logo {
-        font-size: 2rem !important;
+        font-size: 1rem !important;
         color: #000;
-        margin-top: 140px;
+        margin-top: 220px;
         opacity: 0.8;
+    }
+}
+
+/* Navbar styles */
+
+@media (min-width: 310px) {
+
+    .fa-search,
+    .search-para,
+    .fa-user,
+    .fa-shopping-bag,
+    .gt {
+        font-size: 0.8rem;
+    }
+
+    .gt,
+    .search-para {
+        color: #144945;
+    }
+
+    .navbar-toggler-icon {
+        font-size: 0.8rem;
+    }
+
+    .footer-links {
+        font-weight: 400;
+        padding: 5px;
+        font-size: 0.8rem !important;
     }
 }
 
