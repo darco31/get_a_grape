@@ -440,6 +440,11 @@ i {
     border-radius: 10px;
 }
 
+#shopping-link:hover {
+    background-color: #144945;
+    color: #fff;
+}
+
 .product_name strong {
     color: #144945 !important;
 }
