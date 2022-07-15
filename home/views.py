@@ -21,3 +21,10 @@ def shipping(request):
     Returns shipping page
     """
     return render(request, 'home/shipping.html')
+
+
+def about(request):
+    """
+    Returns about page
+    """
+    return render(request, 'home/about.html')

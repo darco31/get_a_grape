@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page-header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+
+<div class="container h-100 faq-cont">
+    <div class="row">
+        <div class="col">
+            <h2 class="logo text-center mb-5">About us</h2>
+        </div>
+    </div>
+    <div class="container container-about-us">
+        <div class="col">
+            <div class="row">
+                <h2 class="about-us-head">How did it all start?</h2>
+                <p class="about-us-para">Well I am glad yu asked. The idea for Get A Grape came to us while well
+                    drinking wine. While there
+                    are loads of choices for wine shope and online stores we thought we may as well turn our love of the
+                    grape into something
+                    more than just enjoying drinking it. We ant to give our experience to you the consumer so you can
+                    enjoy
+                    only the best wines and Champagnes from around the world.
+                </p>
+                <h2 class="about-us-head">Who are we?</h2>
+                <p class="about-us-para">We are a fully Irish owned company , at the minute we are a small and compact
+                    company with 5
+                    employees. This will
+                    continue to gro as the business expands. Our mission is to bring the best wines from across the
+                    globe to your home where you can enjoy them with friends and family.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<h4>
+    <a href="{% url 'products' %}" id="faq-button">Back to Products</a>
+</h4>
+{% endblock %}

@@ -593,3 +593,22 @@ i {
     outline: none !important;
     box-shadow: none !important;
 }
+
+/* About us styles */
+
+.container-about-us {
+    background-color: #c5c6c7;
+    padding: 30px;
+    border-radius: 10px;
+    height: 60%;
+}
+
+.about-us-head {
+    margin: auto;
+    color: #144945;
+    margin-bottom: 30px;
+}
+
+.about-us-para {
+    color: #4e5545;
+}
