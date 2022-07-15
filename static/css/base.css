@@ -612,3 +612,33 @@ i {
 .about-us-para {
     color: #4e5545;
 }
+
+/* Sign up page */
+
+.sign-up-header {
+    margin-top: 110px !important;
+    color: #144945;
+}
+
+.sign-up-button {
+    color: #144945;
+    border: none;
+    background-color: transparent;
+}
+
+.sign-up-button:hover {
+    text-decoration: none;
+    color: #144945;
+    opacity: 0.8;
+}
+
+.login-page-return {
+    color: #144945;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.login-page-return:hover {
+    text-decoration: none;
+    color: #4e5545;
+}
