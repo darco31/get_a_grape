@@ -400,7 +400,9 @@ i {
 .checkout-button,
 .checkout-button1,
 .information-button,
-.signout_button {
+.signout_button,
+.keep-button,
+#keep-button {
     text-transform: uppercase;
     display: inline-block;
     background-color: #144945;
@@ -415,10 +417,13 @@ i {
     margin: 5px;
 }
 
+
 .checkout-button:hover,
 .checkout-button1:hover,
 .information-button:hover,
-.signout_button:hover {
+.signout_button:hover,
+.keep-button:hover,
+#keep-button:hover {
     opacity: 0.8;
     text-decoration: none;
     transform: scale(1.1);
