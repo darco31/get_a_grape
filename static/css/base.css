@@ -74,7 +74,12 @@ hr {
 }
 
 .logo-font {
-    color: #f5e323;
+    color: #eee12a;
+}
+
+.logo-font-sign-out {
+    margin-top: 5rem;
+    color: #144945;
 }
 
 .logo {
@@ -181,75 +186,6 @@ a.category-badge>span.badge:hover {
     border-radius: 0;
 }
 
-/* -------------------------------- Media Queries */
-
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-    .container {
-        max-width: 80%;
-    }
-}
-
-/* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
-    .fixed-top-desktop-only {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
-
-    .header-container {
-        padding-top: 164px;
-    }
-}
-
-@media (min-width: 991px) {
-    .header-container {
-        padding-top: 116px;
-    }
-
-    body {
-        height: calc(100vh - 116px);
-    }
-
-}
-
-
-@media (max-width: 600px) {
-    .logo {
-        font-size: 1rem !important;
-        color: #000;
-        margin-top: 220px;
-        opacity: 0.8;
-    }
-}
-
-/* Navbar styles */
-
-@media (min-width: 310px) {
-
-    .fa-search,
-    .search-para,
-    .fa-user,
-    .fa-shopping-bag,
-    .gt {
-        font-size: 0.8rem;
-    }
-
-    .gt,
-    .search-para {
-        color: #144945;
-    }
-
-    .navbar-toggler-icon {
-        font-size: 0.8rem;
-    }
-
-}
-
-
 /* Footer */
 footer {
     background-color: #d3dbde;
@@ -319,6 +255,7 @@ h6 {
 
 #mc-embedded-subscribe {
     padding: 5px;
+    margin: 0 !important;
 }
 
 .mc-field-group,
@@ -461,7 +398,9 @@ i {
 }
 
 .checkout-button,
-.checkout-button1 {
+.checkout-button1,
+.information-button,
+.signout_button {
     text-transform: uppercase;
     display: inline-block;
     background-color: #144945;
@@ -477,7 +416,9 @@ i {
 }
 
 .checkout-button:hover,
-.checkout-button1:hover {
+.checkout-button1:hover,
+.information-button:hover,
+.signout_button:hover {
     opacity: 0.8;
     text-decoration: none;
     transform: scale(1.1);
@@ -669,4 +610,49 @@ i {
 .login-page-return:hover {
     text-decoration: none;
     color: #4e5545;
+}
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}
+
+@media (min-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    .logo {
+        font-size: 1rem !important;
+        color: #000;
+        margin-top: 220px;
+        opacity: 0.8;
+    }
 }
