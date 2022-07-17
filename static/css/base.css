@@ -23,6 +23,13 @@ hr {
     border: none !important;
 }
 
+/* 404 page styles */
+
+.error-head {
+    color: #fff;
+    font-size: 1.3rem;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
