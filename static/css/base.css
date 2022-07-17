@@ -643,6 +643,13 @@ i {
     color: var(--text-primary-color);
 }
 
+/* Password reset page */
+
+.password-head {
+    margin-top: 270px;
+    color: var(--text-primary-color);
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
