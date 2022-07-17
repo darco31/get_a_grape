@@ -629,7 +629,19 @@ i {
     color: #144945;
 }
 
+#div_id_name,
+#div_id_email,
+#div_id_phone_number,
+#div_id_message {
+    color: #144945;
+    font-size: 1.2rem;
+}
 
+/* Privacy page */
+
+.policy {
+    color: var(--text-primary-color);
+}
 
 /* -------------------------------- Media Queries */
 

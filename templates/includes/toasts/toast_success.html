@@ -38,15 +38,15 @@
             <div class="col">
                 <p class="mt-3 mb-1 text-black">
                     Total{% if free_delivery_delta > 0 %} (Exc. delivery){% endif %}
-                    <span class="float-right">${{ total|floatformat:2 }}</span>
+                    <span class="float-right">€{{ total|floatformat:2 }}</span>
                 </p>
                 {% if free_delivery_delta > 0 %}
                 <p class="mb-0 p-2 bg-warning shadow-sm text-black text-center">
                     Spend ${{ free_delivery_delta }} more to get free next day delivery
                 </p>
                 {% endif %}
-                <a href="{% url 'view_bag' %}" class="btn btn-black btn-block rounded-0">
-                    <span class="keep-button text-uppercase">Go to Secure Checkout</span>
+                <a href="{% url 'view_bag' %}">
+                    <span class="keep-button text-uppercase ml-5">Go to Secure Checkout</span>
                     <span class="icon">
                         <i class="fas fa-lock"></i>
                     </span>

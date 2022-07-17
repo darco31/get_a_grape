@@ -30,3 +30,11 @@ def about(request):
     Returns about page
     """
     return render(request, 'home/about.html')
+
+
+def policy(request):
+    """
+    Returns policy page
+    """
+    return render(request, 'home/policy.html')
+
