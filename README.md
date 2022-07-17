@@ -9,128 +9,136 @@
     * [Scope](#Scope)
     * [Agile](#Agile)
 
-2. [User Experience](#UserExperience)
+2. [Business Model](#Business-Model)
+   
+3. [Marketing](#Marketing)
+   
+4. [User Experience](#UserExperience)
     * [Project Goals](#Project-goals)
     * [User Stories](#Userstories)
 
-3. [Features](#Features)
-    * [Colors](#Colors)
+5. [Features](#Features)
 
-4. [FlowChart Data Structure](#Flow-chart-and-data-structure)
+6. [FlowChart Data Structure](#Flow-chart-and-data-structure)
 
-5. [WireFrames](#Wireframes)
+7. [WireFrames](#Wireframes)
 
-6. [Technology Used In Design](#Technology-Used-In-Design)
+8. [Technology Used In Design](#Technology-Used-In-Design)
 
-7. [Testing](#Testing)
+9. [Testing](#Testing)
     * [HTML Validator](#HTML-Validator)
     * [CSS Validator](#CSS-Validator)
     * [PEP 8](#PEP8)
     * [Automatic testing](#Automatic-testing)
 
-8. [Deployment](#Deployment)
+10. [Deployment](#Deployment)
 
-9. [Credits](#Credits)
+11. [Credits](#Credits)
 
-10. [Issues](#Issues)
+12. [Issues](#Issues)
 
-# The TuneShack
+# Get A Grape Wine store
 
 ## Overview
 
 ### About
-* The Tuneshack is a blog website developed to encourage lovers of all types and genres of music to sign up and talk freely about their love of music, their favorite bands or the best concert they have ever been to. The blog can used to post dates and venues for upcoming concerts. Every body is welcome and encouraged to post and interact with each others posts weather leaving comments or just liking a post.
+* This was a full stack project based around a fictional e-commerce wine store. The store stocks and sells all manner of wines , Champagne and sparkling
+wines from around the world. This the final project in a five project series for my Diploma iof full stack we development.
 
 ### Scope
 
-* The initial scope of the project is to develop a website that is primarily used as a blog site for music lovers to use. There is future scope to extend the site to be more commercial in use i.e selling merchandise, tickets, bookings through third party sites.
+* The initial scope of the project is to develop a website where users can register if they like and login to have a profile available to them. The user was not required to register and can still purchase items without a registration process. I believe this is important as it would take away from the user experience if forced to sign up.
 
-* The first release wil include:
-    - A home page for everyone to view posts and comment.
-    - A sign up page /system for new users.
-    - users can log in and comment and like posts.
-    - Once logged in a user can update or delete their posts.
-    - Authentication used to determine who is logged and who can post/update or delete.
-    - users can log out at any time.
-
-* Future development
-    - Nested comments and a like functionality
-    - Images included in comments
-    - Possibility of an online store
-    - Selling tickets through 3rd party official sites.
-    - Search functionality
-    - Email verification/password update
-    - Categories to pick from
+* The structure of the website is simple and intuitive with standout call to action buttons for each step of the user experience.
 
 ## Agile
 
-![Agile](docs/user_stories.PNG)
+The functionality and design process was managed in Github and Github projects and issues.
+
+There were no specific sprints as my workload and family dictated how much time I could dedicate on a weekly basis to the design of the website. But in saying that I have outlined a timeline of the design events below and what order they were carried out.
+
+### Sprint 1:
+
+* Install Django
+* Install AllAuth
+* Created the base and index html pages.
+* Added some styling to first pages.
+* Started README file
+
+### Sprint 2:
+
+### Sprint 3:
+
+### Sprint 4:
+
+### Sprint 5:
+
+### Sprint 6:
+
+### Sprint 7:
 
 
-# User Experience
+### User Stories
 
-## Project goals
+### EPIC 1 - Basic Web Functionality
 
-* The overall goal of the project is to display my competency in being able to create a website/app using the Django framework in conjunction with Python, Javascript, HTML and CSS. 
+* As a shopper/user I can receive alerts/messages so that I can can clearly see what I have added to my bag and what I may have removed.
+* As a shopper I can easily contact the site owners by several means so that I can ask advise on orders etc.
+* As a shopper I can click on links for social media so that I can contact the site owners in more ways than by email.
+* As a user I can view the home page and clearly understand the purpose of the website so that I can navigate through products and search products.
+* As a User of the website I can view the site on smaller screens so that I can use the app on mobile devices.
+* As a user of the web app I can navigate around the website so that I can view all relevant pages.
 
-* The users of the site will be able to view posts made by all but only create , update and delete posts made by themselves once they have signed up and logged in. Once logged out they will only be able to comment and read posts. Users will be limited to their own content for any updates or removals.
+![Basic Web Functionality](static/imgs/basic_functions.PNG)
 
-## User Stories
-
-### Sign Up
-
-* As a Site User I can sign up to the app so that I can login and make posts and comment/like other posts
-
-### Delete Posts
+### EPIC 2 - User Registration
 
 * As a User I can delete my posts so that they can be removed if required
 
-### Edit a post
+### EPIC 3 - Products
 
 * As a User I can delete my posts so that they can be removed if required
 
-### View a post
+### EPIC 4 - Orders
 
 * As a User I can view and click on posts so that I can read through them weather logged in or logged out
 
-### Like/unlike posts
+### EPIC 5 - Admin Functions
 
 * As a User I can **like and unlike posts ** so that there is site interaction
 
-### Manage Posts
+### EPIC 6 - Product Views
 
 * As a site owner I can manage users and their posts so that I can manage content if required
 
-### Make comments
+# Business Model
 
-* As a user I can make comments so that give feedback to other posts
-
+# Marketing
 
 # Features
 
 ### Home Page
-![Home Page](static/img/home.PNG)
+
 
 * User can open the webpage from the URL provided and do not need to be registered to view the posts on the site. If not logged in the have the option to sign up or if already 
 signed up to login. No unauthorized users can comment or like the posts already shown.
 
 ### Posts Page
-![Posts Page](static/img/post_page.PNG)
+
 
 * The site user can view posts , add comments or likes if logged in. They can delete their own posts and update the posts but cant alter or delete other users posts.
 
 ### Posts with Comments
-![Comments Page](static/img/comment_likes.PNG)
+
 
 * The user can view the comments here.
 
 ### Login Page
-![Login Page](static/img/login.PNG)
+
 
 * The user can login from here.
 
 ### Sign up Page
-![Sign Up Page](static/img/signup.PNG)
 
 * The user can sign up for the site here.
 
@@ -138,7 +146,7 @@ signed up to login. No unauthorized users can comment or like the posts already 
 
 * The inspiration for the colors used on the website where taken from [Canva](https://www.canva.com/)
 
-![Colors](docs/colors.PNG)
+
 
 #### [Back to content](#table-of-contents)
 
@@ -146,11 +154,11 @@ signed up to login. No unauthorized users can comment or like the posts already 
 
 * Tuneshack flowcart
 
-![Flow Chart TuneShack](docs/Flowchart.PNG)
+
 
 * Tuneshack data model
 
-![Data Model TuneShack](docs/datamodel.PNG)
+
 
 #### [Back to content](#table-of-contents)
 
@@ -204,23 +212,27 @@ signed up to login. No unauthorized users can comment or like the posts already 
     - To create the wireframes.
 
 ## Requirements file
-* asgiref==3.5.0
-* cloudinary==1.29.0
+* asgiref==3.5.2
+* boto3==1.24.28
+* botocore==1.27.28
 * dj-database-url==0.5.0
-* dj3-cloudinary-storage==0.0.6
 * Django==3.2
-* django-allauth==0.50.0
-* django-ckeditor==6.4.0
+* django-allauth==0.41.0
+* django-countries==7.2.1
 * django-crispy-forms==1.14.0
-* django-js-asset==2.0.0
+* django-storages==1.12.3
 * gunicorn==20.1.0
+* jmespath==1.0.1
 * oauthlib==3.2.0
-* psycopg2==2.9.3
-* PyJWT==2.3.0
+* Pillow==9.1.1
+* psycopg2-binary==2.9.3
 * python3-openid==3.2.0
 * pytz==2022.1
 * requests-oauthlib==1.3.1
+* s3transfer==0.6.0
 * sqlparse==0.4.2
+* stripe==3.5.0
+
 
 
 #### [Back to content](#table-of-contents)
@@ -238,35 +250,28 @@ signed up to login. No unauthorized users can comment or like the posts already 
 
 ### HTML Validator
 
-![HTML Validations](docs/htmlvals.PNG)
+
 
 ### CSS-Validator
 
-![CSS Validations](docs/css_validation.PNG)
+
 
 ### PEP8
 
-* All PEP8 validations can be found [here](docs/PEP8.pdf)
+
 
 ### Lighthouse Scores
 
-![LightHouse](docs/lighthouse.PNG)
 
-![LightHouse mobile](docs/lighthouse_mobile.PNG)
 
 ### Javascript-Validations
 
-![Javascript](docs/js_vals.PNG)
+
 
 # Automatic-testing
 
 * I have performed some basic automatic tests as shown below on the forms and views.
 
-![Views](docs/test_views.PNG)
-
-![Forms](docs/forms_test.PNG)
-
-![Test Results](docs/test_results.PNG)
 
 * I installed Coverage with pip3 install coverage and ran the program in the terminal with coverage run manage.py test. The file was generated with coverage html and the results can be found in the htmlcov file in the index.html file.
 
@@ -275,7 +280,7 @@ signed up to login. No unauthorized users can comment or like the posts already 
 
 # Deployment
 
-The live deployed application can be found here [TuneShack](https://tuneshack22.herokuapp.com/)
+The live deployed application can be found here 
 
 ### Gitpod and GitHub
 
@@ -351,9 +356,6 @@ command: git push heroku main
 
 # Credits
 
-### Reviews
-* Album reviews taken for educational purpose only from https://www.bbc.co.uk/music/reviews/ and all reviews are credited to their respective owners on the site.
-
 ### Crispy forms instruction
 * https://www.geeksforgeeks.org/styling-django-forms-with-django-crispy-forms/
 
@@ -361,18 +363,10 @@ command: git push heroku main
 
 * https://django-allauth.readthedocs.io/en/latest/
 
-### Likes/Unlike tutorials
-
-* https://dev.to/radualexandrub/how-to-add-like-unlike-button-to-your-django-blog-5gkg
-
-### Messages
-
-* https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/ae7923cfce7f4653a3af9f51825d2eba/?child=first
-
 ### Slack Community
 
-* davidwatters_5P and Daniel_C_5p for their hep on collecting static files.
-* Matt Bodden_5P on help with validating HTML/css WITH Django included.
+* davidwatters_5P and Daniel_C_5p for their help.
+* Matt Bodden_5P on always wanting to help out.
 
 * My Mentor Miguel Martinez for his support through the whole process.
 
