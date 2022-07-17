@@ -402,7 +402,8 @@ i {
 .information-button,
 .signout_button,
 .keep-button,
-#keep-button {
+#keep-button,
+#contact-button {
     text-transform: uppercase;
     display: inline-block;
     background-color: #144945;
@@ -423,7 +424,8 @@ i {
 .information-button:hover,
 .signout_button:hover,
 .keep-button:hover,
-#keep-button:hover {
+#keep-button:hover,
+#contact-button {
     opacity: 0.8;
     text-decoration: none;
     transform: scale(1.1);
@@ -616,6 +618,18 @@ i {
     text-decoration: none;
     color: #4e5545;
 }
+
+/* Contact Us Page Styles */
+
+.contact-cont {
+    margin-top: 150px;
+}
+
+.contact-head {
+    color: #144945;
+}
+
+
 
 /* -------------------------------- Media Queries */
 
