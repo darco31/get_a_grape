@@ -410,13 +410,14 @@ i {
 .signout_button,
 .keep-button,
 #keep-button,
-#contact-button {
+#contact-button,
+.btn-file {
     text-transform: uppercase;
     display: inline-block;
-    background-color: #144945;
-    border-radius: 10px;
+    background-color: #144945 !important;
+    border-radius: 10px !important;
     border: none;
-    color: #eeeeee;
+    color: #eeeeee !important;
     text-align: center;
     font-size: 1rem;
     padding: 0.3rem;
@@ -425,14 +426,14 @@ i {
     margin: 5px;
 }
 
-
 .checkout-button:hover,
 .checkout-button1:hover,
 .information-button:hover,
 .signout_button:hover,
 .keep-button:hover,
 #keep-button:hover,
-#contact-button {
+#contact-button:hover,
+.btn-file:hover {
     opacity: 0.8;
     text-decoration: none;
     transform: scale(1.1);
