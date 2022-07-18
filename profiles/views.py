@@ -34,12 +34,12 @@ def profile(request):
 
 
 def order_history(request, order_number):
-
+    """ Display the user's order history in the profile. """
     order = get_object_or_404(Order, order_number=order_number)
 
     messages.info(request, (f'This is a past order number { order_number }. A conformation email \
                             has already been sent out '))
-    
+
     template = 'checkout/checkout_success.html'
     context = {
         'order': order,
