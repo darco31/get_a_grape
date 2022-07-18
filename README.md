@@ -93,11 +93,20 @@ There were no specific sprints as my workload and family dictated how much time 
 
 ### EPIC 2 - User Registration
 
-* As a User I can delete my posts so that they can be removed if required
+* As a shopper I can easily login and logout of the website so that I can view and update orders.
+* As a shopper I can easily view my profile page so that I can update my current information.
+* As a new shopper I can register for a new account so that I can browse and order products.
+* As a site user I want to be able to setup new passwords and recover my passwords so that I can get access to my account.
+
+![Basic Web Functionality](static/imgs/usr_reg.PNG)
 
 ### EPIC 3 - Products
 
-* As a User I can delete my posts so that they can be removed if required
+* As a shopper I can add/delete products in my basket so that I can purchase/not purchase the products.
+* As a shopper I can easily view product price, rating etc. so that I can decide to buy or not.
+* As a shopper I can use the search box so that I can search for all products I am looking for.
+
+![Basic Web Functionality](static/imgs/products.PNG)
 
 ### EPIC 4 - Orders
 

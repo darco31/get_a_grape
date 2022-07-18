@@ -85,7 +85,7 @@ hr {
 }
 
 .logo-font-sign-out {
-    margin-top: 20rem;
+    margin-top: 5rem;
     color: #144945;
 }
 
@@ -197,9 +197,10 @@ a.category-badge>span.badge:hover {
 footer {
     background-color: #d3dbde;
     opacity: 0.8;
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
     width: 100%;
+
 }
 
 .footer {
@@ -657,6 +658,18 @@ i {
 .password-head {
     margin-top: 270px;
     color: var(--text-primary-color);
+}
+
+/* Sign out page */
+
+.container-sign-out {
+    height: calc(100vh - 470px);
+}
+
+/* sign up container styles */
+
+.container-sign-up {
+    height: calc(100vh - 500px);
 }
 
 /* -------------------------------- Media Queries */
