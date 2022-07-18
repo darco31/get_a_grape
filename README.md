@@ -10,32 +10,34 @@
     * [Agile](#Agile)
 
 2. [Business Model](#Business-Model)
+
+3. [Database](#Database)
    
-3. [Marketing](#Marketing)
+4. [Marketing](#Marketing)
    
-4. [User Experience](#UserExperience)
+5. [User Experience](#UserExperience)
     * [Project Goals](#Project-goals)
     * [User Stories](#Userstories)
 
-5. [Features](#Features)
+6. [Features](#Features)
 
-6. [FlowChart Data Structure](#Flow-chart-and-data-structure)
+7. [FlowChart Data Structure](#Flow-chart-and-data-structure)
 
-7. [WireFrames](#Wireframes)
+8. [WireFrames](#Wireframes)
 
-8. [Technology Used In Design](#Technology-Used-In-Design)
+9. [Technology Used In Design](#Technology-Used-In-Design)
 
-9. [Testing](#Testing)
+10. [Testing](#Testing)
     * [HTML Validator](#HTML-Validator)
     * [CSS Validator](#CSS-Validator)
     * [PEP 8](#PEP8)
     * [Automatic testing](#Automatic-testing)
 
-10. [Deployment](#Deployment)
+11. [Deployment](#Deployment)
 
-11. [Credits](#Credits)
+12. [Credits](#Credits)
 
-12. [Issues](#Issues)
+13. [Issues](#Issues)
 
 # Get A Grape Wine store
 
@@ -123,6 +125,10 @@ There were no specific sprints as my workload and family dictated how much time 
 # Business Model
 
 # Marketing
+
+# Database
+
+![Database Schema](static/imgs/gag.db.jpg)
 
 # Features
 
