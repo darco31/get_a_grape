@@ -293,11 +293,11 @@ go back to all products.
 
 ## I have tested the full CRUD functionality on the project.
 
-### Users can:
+### Admin can:
 
-- Create posts by clicking Add Post.
-- A user can delete or edit their own posts.
-- All users of the website can read posts.
+- Log in as a superuser and create new products,update, and delete products.
+- An admin or superuser can create new products,update, and delete products directly within the UI.
+- All users can view all products
 - A user can contact the site owner.
 
 ### HTML Validator
