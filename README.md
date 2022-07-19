@@ -11,9 +11,9 @@
 
 2. [Business Model](#Business-Model)
 
-3. [Database](#Database)
-   
-4. [Marketing](#Marketing)
+3. [Marketing](#Marketing)
+
+4. [Database](#Database)
    
 5. [User Experience](#UserExperience)
     * [Project Goals](#Project-goals)
@@ -45,7 +45,7 @@
 
 ### About
 * This was a full stack project based around a fictional e-commerce wine store. The store stocks and sells all manner of wines , Champagne and sparkling
-wines from around the world. This the final project in a five project series for my Diploma iof full stack we development.
+wines from around the world. This the final project in a five project series for my Diploma in full stack we development.
 
 ### Scope
 
@@ -128,20 +128,20 @@ There were no specific sprints as my workload and family dictated how much time 
 
 # Database
 
-![Database Schema](static/imgs/gag.db.jpg)
-
 # Features
 
-### Home Page
+## Home Page
 
+* The homepage is a simple design with visible navbar links for all products as well as a breakdown of each product category. We also have a visible call to action button for the user to start shopping. The Account dropdown and shopping back icons are clearly visible. There is a scrolling banner with any special offers available and an intuitive search box for the user to search the website.
 
-* User can open the webpage from the URL provided and do not need to be registered to view the posts on the site. If not logged in the have the option to sign up or if already 
-signed up to login. No unauthorized users can comment or like the posts already shown.
+![Home Page](static/imgs/home.PNG)
 
-### Posts Page
+## Products Page
 
+* The site user can view all products from this page or click into individual products to see a more detailed description and decide if they would like to make the purchase or
+go back to all products.
 
-* The site user can view posts , add comments or likes if logged in. They can delete their own posts and update the posts but cant alter or delete other users posts.
+![All products](static/imgs/product_page.PNG) ![Individual products](static/imgs/single_product.PNG)
 
 ### Posts with Comments
 
@@ -161,25 +161,21 @@ signed up to login. No unauthorized users can comment or like the posts already 
 
 * The inspiration for the colors used on the website where taken from [Canva](https://www.canva.com/)
 
-
+![Color Pallette](static/imgs/color-pallete.PNG)
 
 #### [Back to content](#table-of-contents)
 
 # FlowChart Data Structure
 
-* Tuneshack flowcart
+* Website flowchart
 
-
-
-* Tuneshack data model
-
-
+![Flowchart](static/imgs/flowchart.PNG)
 
 #### [Back to content](#table-of-contents)
 
 ## Wireframes
 
-* All wireframes can be found [here](docs/project_four.pdf)
+* All wireframes can be found [here](docs/pro_5_wireframes.pdf)
 
 #### [Back to content](#table-of-contents)
 
@@ -287,7 +283,6 @@ signed up to login. No unauthorized users can comment or like the posts already 
 
 * I have performed some basic automatic tests as shown below on the forms and views.
 
-
 * I installed Coverage with pip3 install coverage and ran the program in the terminal with coverage run manage.py test. The file was generated with coverage html and the results can be found in the htmlcov file in the index.html file.
 
 
@@ -371,7 +366,13 @@ command: git push heroku main
 
 # Credits
 
+### Images
+
+- Site images were taken from https://www.pexels.com/
+- Images for the wine bottles where taken from https://www.totalwine.com/ . Note these images are not for any redistribution and are for educational purposes only.  
+
 ### Crispy forms instruction
+
 * https://www.geeksforgeeks.org/styling-django-forms-with-django-crispy-forms/
 
 ### Django authentication help
@@ -391,19 +392,6 @@ command: git push heroku main
 
 # Issues/Bugs
 
-### Static files were not loading in the productions environment.
 
-Fix:
-* Move Docs in to the main folder from the static folder and re run collect static. This worked and all files are loading in Heroku.
-
-### Messages were not displaying correctly.
-
-FIX:
-* Login and log out message were not appearing when the connected buttons were clicked byt the user. I installed all auth and this fixed the issues.
-
-### HTML Validator failing.
-
-FIX:
-* Removed stray div tag from the home.html page.
 
 #### [Back to content](#table-of-contents)
