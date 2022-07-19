@@ -63,22 +63,33 @@ There were no specific sprints as my workload and family dictated how much time 
 
 * Install Django
 * Install AllAuth
-* Created the base and index html pages.
-* Added some styling to first pages.
+* Created the project folder
+Created the templates folder for allauth , base.html and the includes folder.
 * Started README file
 
 ### Sprint 2:
 
+* Create the products app
+* Create the category and products fixture JSON files nad load them
+* Create the models, views and templates for the products app.
+
 ### Sprint 3:
+
+* Add bag app
+* Add models, views and template for bag app
 
 ### Sprint 4:
 
-### Sprint 5:
+* Test first deployment in Heroku
+* Add new apps checkout and profiles
+* Add models, views and templates as required
+* Tested Stripe transactions
 
-### Sprint 6:
+### Sprint 4:
 
-### Sprint 7:
-
+* Add contact app
+* Deployed site to test
+* Checked and tested all images to AWS
 
 ### User Stories
 
@@ -100,7 +111,7 @@ There were no specific sprints as my workload and family dictated how much time 
 * As a new shopper I can register for a new account so that I can browse and order products.
 * As a site user I want to be able to setup new passwords and recover my passwords so that I can get access to my account.
 
-![Basic Web Functionality](static/imgs/usr_reg.PNG)
+![User Registration](static/imgs/usr_reg.PNG)
 
 ### EPIC 3 - Products
 
@@ -108,25 +119,49 @@ There were no specific sprints as my workload and family dictated how much time 
 * As a shopper I can easily view product price, rating etc. so that I can decide to buy or not.
 * As a shopper I can use the search box so that I can search for all products I am looking for.
 
-![Basic Web Functionality](static/imgs/products.PNG)
+![Products](static/imgs/products.PNG)
 
 ### EPIC 4 - Orders
 
-* As a User I can view and click on posts so that I can read through them weather logged in or logged out
+* As a shopper I can pay for my orders with secure transactions so that I can receive goods.
+* As a shopper I will receive email conformation of my order so that I can be confident the order was received.
+* As a shopper I can see my order details in my profile so that I can see that I have ordered the correct items.
+* As a shopper I can view the contents of my bag and see my total so that I can decide to buy or not.
+
+![Orders](static/imgs/orders.PNG)
 
 ### EPIC 5 - Admin Functions
 
-* As a User I can **like and unlike posts ** so that there is site interaction
+* As an Admin I can update/delete and edit products so that I can have the most up to date website for my users.
+* As a admin I can login to the backend so that I can control and update user details.
+
+![Admin Functions](static/imgs/admin.PNG)
 
 ### EPIC 6 - Product Views
 
-* As a site owner I can manage users and their posts so that I can manage content if required
+* As a shopper I can view all products available so that I can decide which to purchase.
+
+![Product Views](static/imgs/product_views.PNG)
 
 # Business Model
 
+- This is a standard B2C application modeled on an e commerce store. The idea is it is easy to access and use for the shopper.
+
+- We offer several different varieties of White, Red wines , Champagne and Rose.
+
 # Marketing
 
+- The website/store has a dedicated Facebook page(Removed by Facebook)
+
+![Facebook Pages](static/imgs/facebook_page.PNG)
+![Facebook Pages](static/imgs/facebook_two.PNG)
+
+- We offer a mailchimp subscription service to keep members up to date on all or any offers.
+- SEO is done through keywords added to the meta tags in the html code. These key words were used in Google to gather the top results as displayed at time of testing.
+
 # Database
+
+The Database diagram can be found [here](docs/gag.db.pdf.pdf)
 
 # Features
 
@@ -134,19 +169,20 @@ There were no specific sprints as my workload and family dictated how much time 
 
 * The homepage is a simple design with visible navbar links for all products as well as a breakdown of each product category. We also have a visible call to action button for the user to start shopping. The Account dropdown and shopping back icons are clearly visible. There is a scrolling banner with any special offers available and an intuitive search box for the user to search the website.
 
-![Home Page](static/imgs/home.PNG)
+![Home Page](static/imgs/site_imgs/home.PNG)
 
 ## Products Page
 
 * The site user can view all products from this page or click into individual products to see a more detailed description and decide if they would like to make the purchase or
 go back to all products.
 
-![All products](static/imgs/product_page.PNG) ![Individual products](static/imgs/single_product.PNG)
+![All products](static/imgs/site_imgs/product_page.PNG) ![Individual products](static/imgs/site_imgs/single_product.PNG)
 
-### Posts with Comments
+### Bag
 
+* The user can view the contents of their bag and decide to make the purchase or adjust the contents.
 
-* The user can view the comments here.
+![Shopping Bag](static/imgs/site_imgs/bag_page.PNG)
 
 ### Login Page
 
@@ -184,6 +220,7 @@ go back to all products.
 * Django framework
 * HTML5
 * CSS3
+* JQuery
 * Javascript
     - Used to implement the change in year on in the copyright section of the footer.
     - Also used to hid the field for the author name in the add post section, if this was visible the ID would appear and cause issues.
@@ -199,8 +236,8 @@ go back to all products.
     - Used to create the URLS, Views, Forms and models in the site. Also uses the Django Template Language within the HTML files.
 * [Bootstrap](https://getbootstrap.com/)
     - Bootstrap is mainly used to style the page and add responsiveness to the website.
-* [Cloudinary](https://cloudinary.com/)
-    - Cloudinary is used to store all the images used withing the project.
+* [AWS Amazon](https://aws.amazon.com/)
+    - AWS S3 buckets is used to store all the images used withing the project.
 * [Google Fonts](https://fonts.google.com/)
     - Used as the main fonts throughout the project.
 * [Git](https://git-scm.com/)
@@ -221,6 +258,10 @@ go back to all products.
     - To draw out the database schema.
 * [Balsamiq](https://django-allauth.readthedocs.io/en/latest/)
     - To create the wireframes.
+* [Stripe](https://stripe.com/ie)
+    - To make dummy transaction with dummy credit card.
+* [Pillow](https://python-pillow.org/)
+    - Python imaging library   
 
 ## Requirements file
 * asgiref==3.5.2

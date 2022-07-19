@@ -25,17 +25,24 @@
    "terminal.integrated.gpuAcceleration": "canvas",
    "editor.defaultFormatter": "HookyQR.beautify",
    "cSpell.words": [
+      "Balsamiq",
       "blhpompx",
+      "Bodden",
       "boto",
+      "botocore",
       "Bulma",
       "contactus",
       "csrfmiddlewaretoken",
       "Csvg",
+      "davidwatters",
       "herokuapp",
+      "imgs",
       "lineitem",
       "Mailchimp",
+      "oauthlib",
       "postloadjs",
       "rjjhob",
-      "sauvignon"
+      "sauvignon",
+      "Userstories"
    ]
 }
