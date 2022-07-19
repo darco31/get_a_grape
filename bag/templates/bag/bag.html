@@ -12,7 +12,7 @@
 
 {% block content %}
 <div class="overlay"></div>
-<div class="container container-bag">
+<div class="container">
     <div class="row">
         <div class="col mt-5">
             <hr>
@@ -40,9 +40,11 @@
                     <tr>
                         <td class="p-3 w-25">
                             {% if item.product.image %}
-                            <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="img-fluid rounded">
+                            <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}"
+                                class="img-fluid rounded">
                             {% else %}
-                            <img src="{{ MEDIA_URL }}noimage.png" alt="Products images" class="img-fluid rounded" alt="{{ item.product.name }}">
+                            <img src="{{ MEDIA_URL }}noimage.png" alt="Products images" class="img-fluid rounded"
+                                alt="{{ item.product.name }}">
                             {% endif %}
                         </td>
                         <td class="py-3">
@@ -58,15 +60,19 @@
                                 <div class="form-group">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
-                                            <button class="decrement-qty btn btn-sm btn-black rounded-0" data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
+                                            <button class="decrement-qty btn btn-sm btn-black rounded-0"
+                                                data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
                                                 <span>
                                                     <i class="fas fa-minus fa-small"></i>
                                                 </span>
                                             </button>
                                         </div>
-                                        <input type="number" class="form-control form-control-sm qty_input" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item-id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
+                                        <input type="number" class="form-control form-control-sm qty_input"
+                                            name="quantity" value="{{ item.quantity }}" min="1" max="99"
+                                            data-item-id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
                                         <div class="input-group-append">
-                                            <button class="increment-qty btn btn-sm btn-black rounded-0" data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
+                                            <button class="increment-qty btn btn-sm btn-black rounded-0"
+                                                data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
                                                 <span>
                                                     <i class="fas fa-plus fa-small"></i>
                                                 </span>
@@ -93,7 +99,8 @@
                             </h4>
                             {% if free_delivery_delta > 0 %}
                             <p class="mb-1 text-danger">
-                                You could get free delivery by spending just <strong id="free_del">€{{ free_delivery_delta }}</strong> more!
+                                You could get free delivery by spending just <strong
+                                    id="free_del">€{{ free_delivery_delta }}</strong> more!
                             </p>
                             {% endif %}
                         </td>
@@ -113,13 +120,15 @@
                 </div>
             </div>
             {% else %}
-            <p class="lead mb-5">Your bag is empty.</p>
-            <a href="{% url 'products' %}" class="btn">
-                <span class="icon">
-                    <i class="fas fa-chevron-left"></i>
-                </span>
-                <span id="shopping-link">Keep Shopping</span>
-            </a>
+            <div class="container-bag">
+                <p class="lead mb-5">Your bag is empty.</p>
+                <a href="{% url 'products' %}" class="btn">
+                    <span class="icon">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    <span id="shopping-link">Keep Shopping</span>
+                </a>
+            </div>
             {% endif %}
         </div>
     </div>
@@ -134,13 +143,13 @@
 
 <!-- Update and remove items from bag -->
 <script type="text/javascript">
-    $('.update-link').click(function(e) {
+    $('.update-link').click(function (e) {
         var form = $(this).prev('.update-form');
         form.submit();
         console.log("working")
     })
 
-    $('.remove-item').click(function(e) {
+    $('.remove-item').click(function (e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
         var url = `/bag/remove/${itemId}/`;
@@ -149,7 +158,7 @@
         };
 
         $.post(url, data)
-            .done(function() {
+            .done(function () {
                 location.reload();
             });
 

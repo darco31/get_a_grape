@@ -674,6 +674,13 @@ i {
     height: calc(100vh - 500px);
 }
 
+/* Bag container */
+
+.container-bag {
+    height: calc(100vh - 390px);
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
