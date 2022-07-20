@@ -29,7 +29,7 @@
                 <div class="col-9">
                     <p class="my-0">{{ item.product.name }}</p>
                     <p class="my-0 small"></p>
-                    <p class="my-0 small text-muted">Qty:{{ item.quantity }}</p>
+                    <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                 </div>
             </div>
             {% endfor %}
@@ -46,7 +46,7 @@
                 </p>
                 {% endif %}
                 <a href="{% url 'view_bag' %}">
-                    <span class="keep-button text-uppercase ml-5">Go to Secure Checkout</span>
+                    <span class="keep-button-checkout">Go to Secure Checkout</span>
                     <span class="icon">
                         <i class="fas fa-lock"></i>
                     </span>
