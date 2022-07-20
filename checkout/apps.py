@@ -1,7 +1,13 @@
+"""
+Imports
+"""
 from django.apps import AppConfig
 
 
 class CheckoutConfig(AppConfig):
+    """
+    Apps name
+    """
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'checkout'
 

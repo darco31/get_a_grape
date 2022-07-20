@@ -13,14 +13,14 @@ def contact(request):
         if form.is_valid():
             form.save()
             messages.success(request,
-                            ('Thanks for getting in contact with us,'
-                             'We will be in contact as soon as possible.'))
-        
+                             ('Thanks for getting in contact with us,'
+                              'We will be in contact as soon as possible.'))
+
             return redirect(reverse('contact'))
         else:
-            messages.error(request, 
-                        ('Sorry I didnt quite catch that'
-                        'Please try again'))
+            messages.error(request,
+                           ('Sorry I didnt quite catch that'
+                            'Please try again'))
 
     else:
         form = ContactForm()

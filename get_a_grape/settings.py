@@ -23,7 +23,6 @@ DEBUG = True
 ALLOWED_HOSTS = ['get-a-grape.herokuapp.com', 'localhost']
 
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -74,7 +73,7 @@ TEMPLATES = [
             'context_processors': [
                 'django.template.context_processors.debug',
                 # Required by allauth , dont remove
-                'django.template.context_processors.request', 
+                'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
@@ -137,16 +136,20 @@ else:
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation\
+        .UserAttributeSimilarityValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation\
+        .MinimumLengthValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation\
+        .CommonPasswordValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation\
+        .NumericPasswordValidator',
     },
 ]
 

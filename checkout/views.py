@@ -2,7 +2,8 @@
 All imports required for views to function
 """
 import json
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import render, redirect, reverse, get_object_or_404,\
+     HttpResponse
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -48,7 +49,7 @@ def checkout(request):
         bag = request.session.get('bag', {})
 
         form_data = {
-            'full_name': request.POST['full_name'],            
+            'full_name': request.POST['full_name'],       
             'email': request.POST['email'],
             'mobile_number': request.POST['mobile_number'],
             'street_address1': request.POST['street_address1'],
@@ -83,16 +84,17 @@ def checkout(request):
                     )
                     order.delete()
                     return redirect(reverse('view_bag'))
-      
+
                 request.session['save-info'] = 'save_info' in request.POST
-                return redirect(reverse('checkout_success', args=[order.order_number]))
+                return redirect(reverse('checkout_success',
+                                args=[order.order_number]))
         else:
             messages.error(request, 'There was an error with your order')
 
     else:
         bag = request.session.get('bag', {})
         if not bag:
-            messages.error(request, "There's nothing in your bag at the moment")
+            messages.error(request, "There's nothing in your bag now")
             return redirect(reverse('products'))
 
         current_bag = bag_contents(request)
@@ -104,7 +106,7 @@ def checkout(request):
             currency=settings.STRIPE_CURRENCY,
         )
 
-         # Pre fill the form with any info the user maintains in their profile
+        # Pre fill the form with any info the user maintains in their profile
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)
