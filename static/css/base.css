@@ -205,10 +205,7 @@ a.category-badge>span.badge:hover {
 footer {
     background-color: #d3dbde;
     opacity: 0.8;
-    /* position: absolute;
-    bottom: 0; */
     width: 100%;
-
 }
 
 .footer {
@@ -227,7 +224,6 @@ footer {
     color: #323a25;
     text-decoration: none;
     opacity: 0.6;
-
 }
 
 .footer-div {
@@ -252,7 +248,7 @@ h6 {
     color: #323a25;
 }
 
-.text-secondary {
+.footer-link-title {
     text-transform: uppercase;
     font-size: 1.3rem;
 }
@@ -729,4 +725,114 @@ i {
         margin-top: 220px;
         opacity: 0.8;
     }
+
+}
+
+@media screen and (max-width:400px) {
+
+    /* Navigation Styling */
+    nav li {
+        margin: 0 !important;
+        width: 20%;
+    }
+
+    .navbar-nav,
+    .dropdown-item {
+        font-size: small !important;
+        font-weight: bolder;
+    }
+
+    .navbar-toggler {
+        padding: 2px !important;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .shop-now-button {
+        background: #ffffff;
+        padding: 0.3rem;
+        color: var(--first-color);
+        font-size: 1rem;
+    }
+
+    #delivery-banner {
+        background-color: #144945;
+        height: 30px;
+    }
+
+    .logo-font {
+        font-size: 1rem;
+    }
+
+    .footer-header {
+        font-size: small;
+        margin: 0;
+    }
+
+    .footer-links {
+        font-size: 1rem;
+        padding: 0.2rem;
+    }
+
+    .footer-link-title {
+        font-size: 1.2rem;
+    }
+
+    .container-sign-up {
+        height: 100vh;
+        width: 200% !important;
+        margin-top: 200px;
+    }
+
+    .login-header {
+        color: var(--first-color);
+    }
+
+    .container-bag {
+        height: 100vh;
+    }
+
+    .btn-button {
+        width: 15% !important;
+    }
+
+    th {
+        font-size: .8rem;
+    }
+
+    .update-link,
+    .remove-item {
+        font-size: .8rem;
+        display: inline-block;
+        padding: .2rem;
+        margin-top: 2px;
+    }
+
+    .bag-total-head {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: center;
+        width: 350%;
+    }
+
+    .bag-contents-header {
+        display: none;
+    }
+
+    .checkout-button,
+    .checkout-button1 {
+        font-size: 0.8rem !important;
+    }
+
+    .table-responsive {
+        text-align: center;
+    }
+
+    .img-fluid {
+        display: none;
+    }
+
 }
