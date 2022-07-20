@@ -79,6 +79,12 @@ hr {
     margin-top: 100px;
 }
 
+.header_name {
+    font-size: 3rem;
+    color: var(--seventh-color);
+    font-weight: bold;
+}
+
 .logo-font-pro:hover {
     color: #232b2e;
 }
