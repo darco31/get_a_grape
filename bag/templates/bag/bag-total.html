@@ -1,0 +1,9 @@
+<h6 class="bag-total">Bag Total: €{{ total|floatformat:2 }}</h6>
+<h6 class="bag-total mt-4">Delivery: €{{ delivery|floatformat:2 }}</h6>
+<h4 class="bag-total mt-5">Grand Total: €{{ grand_total|floatformat:2 }}
+</h4>
+{% if free_delivery_delta > 0 %}
+<p class="mb-1 text-danger">
+    You could get free delivery by spending just <strong id="free_del">€{{ free_delivery_delta }}</strong> more!
+</p>
+{% endif %}
