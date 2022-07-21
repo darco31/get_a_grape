@@ -1,5 +1,8 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item d-block d-lg-none">
+            <a href="{% url 'home' %}" id="home-link" class="nav-link nav-link-drop mr-5 dropdown-item">Home</a>
+        </li>
         <li class="nav-item dropdown">
             <a class="logo-font-pro font-weight-bold nav-link mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Wines
@@ -21,7 +24,7 @@
                 <a href="{% url 'products' %}?category=cabernet_sauvignon" class="dropdown-item">Cabernet Sauvignon</a>
                 <a href="{% url 'products' %}?category=pinot_noir" class="dropdown-item">Pinot Noir</a>
                 <a href="{% url 'products' %}?category=merlot,cabernet_sauvignon,pinot_noir " class="dropdown-item">All
-                    RedWine</a>
+                    Red Wine</a>
             </div>
         </li>
 
@@ -33,7 +36,7 @@
                 <a href="{% url 'products' %}?category=chardonnay" class="dropdown-item">Chardonnay</a>
                 <a href="{% url 'products' %}?category=sauvignon_blanc" class="dropdown-item">Sauvignon Blanc</a>
                 <a href="{% url 'products' %}?category=pinot_grigio" class="dropdown-item">Pinot Grigio</a>
-                <a href="{% url 'products' %}?category=chardonnay,sauvignon-blanc,pinot_grigio" class="dropdown-item">All WhiteWine</a>
+                <a href="{% url 'products' %}?category=chardonnay,sauvignon-blanc,pinot_grigio" class="dropdown-item">All White Wine</a>
             </div>
         </li>
 
@@ -45,7 +48,8 @@
                 <a href="{% url 'products' %}?category=champagne" class="dropdown-item">Champagne</a>
                 <a href="{% url 'products' %}?category=processco" class="dropdown-item">Prosecco</a>
                 <a href="{% url 'products' %}?category=rose" class="dropdown-item">Rose</a>
-                <a href="{% url 'products' %}?category=champagne,processco,rose" class="dropdown-item">All Sparkling & Rose</a>
+                <a href="{% url 'products' %}?category=champagne,processco,rose" class="dropdown-item">All Sparkling &
+                    Rose</a>
             </div>
         </li>
     </ul>

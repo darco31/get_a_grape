@@ -706,7 +706,7 @@ i {
     }
 }
 
-@media (min-width: 991px) {
+@media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
     }
@@ -715,124 +715,84 @@ i {
         height: calc(100vh - 116px);
     }
 
-}
-
-
-@media (max-width: 600px) {
-    .logo {
-        font-size: 1rem !important;
-        color: #000;
-        margin-top: 220px;
-        opacity: 0.8;
+    .display-4.logo {
+        font-size: 1.5rem;
     }
 
-}
+    .search-para,
+    .gt {
+        font-size: 0.8rem;
+        color: var(--seventh-color);
+    }
 
-@media screen and (max-width:400px) {
-
-    /* Navigation Styling */
     nav li {
-        margin: 0 !important;
+        padding: 0.15rem;
         width: 20%;
     }
 
     .navbar-nav,
     .dropdown-item {
-        font-size: small !important;
-        font-weight: bolder;
+        font-size: 0.8rem;
     }
 
     .navbar-toggler {
-        padding: 2px !important;
+        padding: .2rem .2rem;
+        font-size: 1rem;
     }
 
-    .logo {
-        display: none;
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    #delivery-banner h4 {
+        font-size: .9rem;
+    }
+
+    marquee {
+        height: 20px;
     }
 
     .shop-now-button {
-        background: #ffffff;
-        padding: 0.3rem;
-        color: var(--first-color);
-        font-size: 1rem;
-    }
-
-    #delivery-banner {
-        background-color: #144945;
-        height: 30px;
-    }
-
-    .logo-font {
-        font-size: 1rem;
-    }
-
-    .footer-header {
-        font-size: small;
-        margin: 0;
-    }
-
-    .footer-links {
-        font-size: 1rem;
-        padding: 0.2rem;
-    }
-
-    .footer-link-title {
         font-size: 1.2rem;
     }
 
-    .container-sign-up {
-        height: 100vh;
-        width: 200% !important;
-        margin-top: 200px;
+    .increment-qty,
+    .decrement-qty {
+        padding: .25rem .5rem !important;
     }
 
-    .login-header {
-        color: var(--first-color);
-    }
-
-    .container-bag {
-        height: 100vh;
-    }
-
-    .btn-button {
-        width: 15% !important;
-    }
-
-    th {
+    .footer-header {
+        margin: 0;
         font-size: .8rem;
     }
 
-    .update-link,
-    .remove-item {
-        font-size: .8rem;
-        display: inline-block;
-        padding: .2rem;
-        margin-top: 2px;
+    .footer-link-title {
+        font-size: 1.1rem;
     }
 
-    .bag-total-head {
+    .footer-links {
+        font-size: 0.8rem;
+    }
+
+    .footer-div {
         display: flex;
         flex-direction: column;
-        align-items: baseline;
-        justify-content: center;
-        width: 350%;
+        height: 200px;
     }
 
-    .bag-contents-header {
-        display: none;
+    #keep-button {
+        margin-top: 2px !important;
+        padding: 1px;
+        font-size: 0.8rem;
     }
 
-    .checkout-button,
-    .checkout-button1 {
-        font-size: 0.8rem !important;
+    .keep-button {
+        font-size: 0.8rem;
+        margin-left: 1.1rem;
     }
 
-    .table-responsive {
-        text-align: center;
-    }
-
-    .img-fluid {
-        display: none;
+    #user-options {
+        padding: 0;
     }
 
 }
