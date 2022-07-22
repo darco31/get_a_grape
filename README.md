@@ -1,6 +1,6 @@
 # Get A Grape - Stephen D'Arcy
 
-![Home Page](static/img/)
+![Home Page](static/imgs/site_imgs/reponsive.PNG)
 
 # Table of contents
 
@@ -186,12 +186,19 @@ go back to all products.
 
 ### Login Page
 
-
 * The user can login from here.
+
+![Shopping Bag](static/imgs/site_imgs/signin.PNG)
 
 ### Sign up Page
 
 * The user can sign up for the site here.
+
+### Contact Page
+
+* The user can contact the site owners
+
+![Shopping Bag](static/imgs/site_imgs/contact.PNG)
 
 # Colors
 

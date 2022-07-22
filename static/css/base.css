@@ -666,24 +666,21 @@ i {
 /* sign up container styles */
 
 .container-sign-up {
-    height: calc(100vh - 500px);
-}
-
-/* Bag container */
-
-.container-bag {
-    height: 100vh !important;
+    height: 100vh
 }
 
 .faq-cont {
     height: 100vh;
 }
 
+.container-profile {
+    height: 100vh;
+}
 
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
     .container {
         max-width: 80%;
     }
@@ -714,6 +711,7 @@ i {
     }
 
     .display-4.logo {
+        margin-top: 10px !important;
         font-size: 1.5rem;
     }
 
@@ -939,6 +937,7 @@ i {
     .summary {
         text-align: center;
     }
+
 
 
 }
