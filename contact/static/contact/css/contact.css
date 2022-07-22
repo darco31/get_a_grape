@@ -1,0 +1,39 @@
+.contact-cont {
+    margin-top: 150px;
+}
+
+.contact-head {
+    color: #144945;
+}
+
+#div_id_name,
+#div_id_email,
+#div_id_phone_number,
+#div_id_message {
+    color: #144945;
+    font-size: 1.2rem;
+}
+
+.contact-cont {
+    height: 100vh !important;
+}
+
+
+@media (max-width: 991px) {
+    .contact-head {
+        font-size: 1.5rem !important;
+        margin-top: 0 !important;
+    }
+
+    .contact-cont {
+        height: 150vh !important;
+    }
+
+    label {
+        font-size: 1rem !important;
+    }
+
+    #contact-button {
+        width: 30%;
+    }
+}

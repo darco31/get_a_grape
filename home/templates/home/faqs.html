@@ -12,7 +12,7 @@
 {% block content %}
 <!-- <div class="overlay-faq"></div> -->
 
-<div class="container h-100 faq-cont">
+<div class="container faq-cont">
     <div class="row">
         <div class="col">
             <h2 class="logo text-center mb-5">All Your Questions Answered</h2>
@@ -85,7 +85,7 @@
         <!-- Fifth FAQ -->
         <div class="card">
             <div class="card-header" id="headingFive">
-                <h2 class=" mb-0">
+                <h2 class=" mb-3">
                     <button class="btn btn-link btn-block text-left collapsed icon" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
                         How long will it take to receive my order?
                     </button>
@@ -101,7 +101,7 @@
         <!-- Sixth FAQ -->
         <div class="card">
             <div class="card-header" id="headingSix">
-                <h2 class=" mb-0">
+                <h2 class=" mb-3">
                     <button class="btn btn-link btn-block text-left collapsed icon" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseTwo">
                         How can I apply for a position with The Wine Cellar Group?
                     </button>
@@ -118,7 +118,7 @@
         <!-- Seventh FAQ -->
         <div class="card">
             <div class="card-header" id="headingSeven">
-                <h2 class=" mb-0">
+                <h2 class=" mb-3">
                     <button class="btn btn-link btn-block text-left collapsed icon" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseTwo">
                         Do you sell accessories like corkscrews, wine glasses, or gifts?
                     </button>
@@ -133,7 +133,7 @@
         <!-- Eight FAQ -->
         <div class="card">
             <div class="card-header" id="headingEight">
-                <h2 class=" mb-0">
+                <h2 class=" mb-3">
                     <button class="btn btn-link btn-block text-left collapsed icon" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseTwo">
                         How does delivery work, and do I need to be home to receive my order?
                     </button>
@@ -148,8 +148,9 @@
             </div>
         </div>
     </div>
+    <h4>
+        <a href="{% url 'products' %}" id="faq-button">Back to Products</a>
+    </h4>
 </div>
-<h4>
-    <a href="{% url 'products' %}" id="faq-button">Back to Products</a>
-</h4>
+
 {% endblock %}

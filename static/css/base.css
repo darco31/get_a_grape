@@ -545,7 +545,6 @@ i {
 .card {
     background-color: #d3dbde !important;
     color: #212529;
-    border-radius: 5px !important;
 }
 
 .btn-link {
@@ -563,11 +562,12 @@ i {
     justify-content: center;
     color: #144945;
     background-color: #d3dbde;
-    width: 10%;
+    width: 20%;
     border-radius: 10px;
     padding: 3px;
     margin: auto;
     font-size: 1.2rem;
+    margin-top: .8rem;
 }
 
 #faq-button:hover {
@@ -632,24 +632,6 @@ i {
     color: #4e5545;
 }
 
-/* Contact Us Page Styles */
-
-.contact-cont {
-    margin-top: 150px;
-}
-
-.contact-head {
-    color: #144945;
-}
-
-#div_id_name,
-#div_id_email,
-#div_id_phone_number,
-#div_id_message {
-    color: #144945;
-    font-size: 1.2rem;
-}
-
 /* Privacy page */
 
 .policy {
@@ -679,6 +661,10 @@ i {
 
 .container-bag {
     height: calc(100vh - 490px);
+}
+
+.faq-cont {
+    height: 100vh;
 }
 
 
@@ -782,7 +768,6 @@ i {
     .footer-div {
         display: flex;
         flex-direction: column;
-        height: 200px;
     }
 
     #keep-button {
@@ -818,6 +803,53 @@ i {
 
     .container-sign-up {
         height: 100vh;
+    }
+
+    .sign-up-header {
+        font-size: 1.2rem !important;
+    }
+
+    .container-sign-out {
+        height: 50vh;
+    }
+
+    .logo-font-sign-out {
+        font-size: 1.2rem;
+    }
+
+    .signout_button,
+    .information-button {
+        padding: 2px;
+        font-size: 1rem;
+    }
+
+    #product-management-header {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+
+    .logo {
+        margin-top: 120px;
+        font-size: 1.1rem;
+    }
+
+    .faq-cont {
+        height: 115vh !important;
+        margin-bottom: 50px;
+    }
+
+    #faq-button {
+        width: 50%;
+        border-radius: 10px;
+        padding: 3px;
+        margin: auto;
+        font-size: .9rem;
+        margin-top: .8rem;
+    }
+
+    .text-left,
+    .card-body {
+        font-size: 0.8rem !important;
     }
 
 }

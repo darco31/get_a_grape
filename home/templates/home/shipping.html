@@ -12,7 +12,7 @@
 {% block content %}
 <!-- <div class="overlay-faq"></div> -->
 
-<div class="container h-100 faq-cont">
+<div class="container faq-cont">
     <div class="row">
         <div class="col">
             <h2 class="logo text-center mb-5">Shipping & Returns</h2>
@@ -116,8 +116,9 @@
             </div>
         </div>
     </div>
+    <h4>
+        <a href="{% url 'products' %}" id="faq-button">Back to Products</a>
+    </h4>
 </div>
-<h4>
-    <a href="{% url 'products' %}" id="faq-button">Back to Products</a>
-</h4>
+
 {% endblock %}
