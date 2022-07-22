@@ -719,6 +719,10 @@ i {
         font-size: 1.5rem;
     }
 
+    .head-pro {
+        margin-top: 10px;
+    }
+
     .search-para,
     .gt {
         font-size: 0.8rem;
@@ -736,12 +740,13 @@ i {
     }
 
     .navbar-toggler {
-        padding: .2rem .2rem;
-        font-size: 1rem;
+        padding: .2rem .2rem !important;
+        font-size: 0.9rem !important;
     }
 
     .nav-link i.fa-lg {
         font-size: 1rem;
+        margin-left: 10px;
     }
 
     #delivery-banner h4 {
@@ -793,6 +798,26 @@ i {
 
     #user-options {
         padding: 0;
+    }
+
+    .btn-button {
+        margin: auto;
+        width: 10% !important;
+    }
+
+    .container-sign-up {
+        height: 70vh;
+        width: 200% !important;
+    }
+
+    .login-header,
+    .sign-up-header {
+        margin: 10px !important;
+        color: #144945;
+    }
+
+    .container-sign-up {
+        height: 100vh;
     }
 
 }
