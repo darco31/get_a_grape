@@ -29,7 +29,6 @@ class StripeWH_Handler:
 
         send_mail(subject, body, settings.DEFAULT_FROM_EMAIL, [cust_email])
 
-
     def handle_event(self, event):
         """
         Unknown/generic and unexpected webhook
@@ -57,7 +56,7 @@ class StripeWH_Handler:
             if value == "":
                 shipping_details.address[field] = None
 
-        #Update profile information
+        # Update profile information
         profile = None
         username = intent.metadata.username
         if username != 'AnonymousUser':
@@ -67,8 +66,10 @@ class StripeWH_Handler:
                 profile.default_country = shipping_details.address.country
                 profile.default_postcode = shipping_details.address.postal_code
                 profile.default_town_or_city = shipping_details.address.city
-                profile.default_street_address1 = shipping_details.address.line1
-                profile.default_street_address2 = shipping_details.address.line2
+                profile.default_street_address1 = (
+                    shipping_details.address.line1)
+                profile.default_street_address2 = (
+                    shipping_details.address.line2)
                 profile.default_county = shipping_details.address.state
                 profile.save()
 

@@ -26,6 +26,7 @@
    "editor.defaultFormatter": "HookyQR.beautify",
    "cSpell.words": [
       "ASGI",
+      "asgiref",
       "Balsamiq",
       "blhpompx",
       "Bodden",
@@ -35,16 +36,26 @@
       "contactus",
       "csrfmiddlewaretoken",
       "Csvg",
+      "cust",
       "davidwatters",
       "didnt",
+      "gunicorn",
       "herokuapp",
       "imgs",
+      "jmespath",
       "lineitem",
       "Mailchimp",
       "oauthlib",
+      "pallete",
       "postloadjs",
+      "psycopg",
+      "pytz",
+      "reponsive",
       "rjjhob",
       "sauvignon",
-      "Userstories"
+      "signin",
+      "sqlparse",
+      "Userstories",
+      "wsgi"
    ]
 }

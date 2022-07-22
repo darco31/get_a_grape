@@ -49,7 +49,7 @@ def checkout(request):
         bag = request.session.get('bag', {})
 
         form_data = {
-            'full_name': request.POST['full_name'],       
+            'full_name': request.POST['full_name'],
             'email': request.POST['email'],
             'mobile_number': request.POST['mobile_number'],
             'street_address1': request.POST['street_address1'],

@@ -28,10 +28,6 @@
 9. [Technology Used In Design](#Technology-Used-In-Design)
 
 10. [Testing](#Testing)
-    * [HTML Validator](#HTML-Validator)
-    * [CSS Validator](#CSS-Validator)
-    * [PEP 8](#PEP8)
-    * [Automatic testing](#Automatic-testing)
 
 11. [Deployment](#Deployment)
 
@@ -292,47 +288,73 @@ go back to all products.
 * sqlparse==0.4.2
 * stripe==3.5.0
 
+# Testing
 
+## Python Validations
+  ### Bag
+- [Apps](docs/validation/python/bag/apps.PNG "apps")
+- [Contexts](docs/validation/python/bag/contexts.PNG "contexts")
+- [Urls](docs/validation/python/bag/urls.PNG "urls")
+- [Views](docs/validation/python/bag/views.PNG "views")
 
-#### [Back to content](#table-of-contents)
+### Checkout
+- [Apps](docs/validation/python/checkout/apps.PNG "apps")
+- [Admin](docs/validation/python/checkout/admin.PNG "admin")
+- [Forms](docs/validation/python/checkout/forms.PNG "forms")
+- [Urls](docs/validation/python/checkout/urls.PNG "urls")
+- [Views](docs/validation/python/checkout/views.PNG "views")
+- [Forms](docs/validation/python/checkout/forms.PNG "forms")
+- [Webhook](docs/validation/python/checkout/webhooks.PNG "webhook")
+- [Webhook Handlers](docs/validation/python/checkout/webhooks_hand.PNG "webhook")
+- [Signals](docs/validation/python/checkout/signals.PNG "signals")
+- [Models](docs/validation/python/checkout/models.PNG "models")
 
-# Testing (Manual)
+### Contact
 
-## I have tested the full CRUD functionality on the project.
+- [Apps](docs/validation/python/contact/apps.PNG "apps")
+- [Admin](docs/validation/python/contact/admin.PNG "admin")
+- [Forms](docs/validation/python/contact/checkout/forms.PNG "forms")
+- [Models](docs/validation/python/contact/models.PNG "models")
+- [Urls](docs/validation/python/contact/urls.PNG "urls")
+- [Views](docs/validation/python/contact/views.PNG "views")
 
-### Admin can:
+### Home
+- [Apps](docs/validation/python/home/apps.PNG "apps")
+- [Urls](docs/validation/python/home/urls.PNG "urls")
+- [Views](docs/validation/python/home/views.PNG "views")
 
-- Log in as a superuser and create new products,update, and delete products.
-- An admin or superuser can create new products,update, and delete products directly within the UI.
-- All users can view all products
-- A user can contact the site owner.
+### Main
 
-### HTML Validator
+- [ASGI](docs/validation/python/main/asgi.PNG "asgi")
+- [Settings](docs/validation/python/main/settings.PNG "settings")
+- [WSGI](docs/validation/python/main/wsgi.PNG "wsgi")
+- [Urls](docs/validation/python/main/urls.PNG "urls")
+- [Views](docs/validation/python/main/views.PNG "views")
 
+### Products
 
+- [Widgets](docs/validation/python/products/apps.PNG "widgets")
+- [Admin](docs/validation/python/products/admin.PNG "admin")
+- [Forms](docs/validation/python/products/forms.PNG "forms")
+- [Models](docs/validation/python/products/models.PNG "models")
+- [Urls](docs/validation/python/products/urls.PNG "urls")
+- [Views](docs/validation/python/products/views.PNG "views")
 
-### CSS-Validator
+### Profiles
 
+- [Forms](docs/validation/python/profiles/forms.PNG "forms")
+- [Models](docs/validation/python/profiles/models.PNG "models")
+- [Urls](docs/validation/python/profiles/urls.PNG "urls")
+- [Views](docs/validation/python/profiles/views.PNG "views")
 
+### Javascript Validations
 
-### PEP8
+### HTML Validations
 
+- [Home](docs/validation/html/html_check_home.PNG "home")
+- [Product](docs/validation/html/html_products_check.PNG "product")
 
-
-### Lighthouse Scores
-
-
-
-### Javascript-Validations
-
-
-
-# Automatic-testing
-
-* I have performed some basic automatic tests as shown below on the forms and views.
-
-* I installed Coverage with pip3 install coverage and ran the program in the terminal with coverage run manage.py test. The file was generated with coverage html and the results can be found in the htmlcov file in the index.html file.
-
+### CSS Validation
 
 #### [Back to content](#table-of-contents)
 
