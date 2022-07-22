@@ -173,6 +173,10 @@ a.category-badge>span.badge:hover {
     cursor: pointer;
 }
 
+/* .btt-link {
+    text-align: center !important;
+} */
+
 /* Product form */
 
 .btn-file {
@@ -324,6 +328,8 @@ i {
 /* Bag styles */
 .bag-total-head {
     text-align: center;
+    color: var(--first-color);
+    margin: 50px 0 50px 0;
 }
 
 .bag-total {
@@ -369,7 +375,8 @@ i {
 }
 
 .product-head,
-.qty-head {
+.qty-head,
+.sub-head {
     text-align: center;
 }
 
@@ -430,6 +437,10 @@ i {
     width: 200px;
     transition: all 0.5s;
     margin: 5px;
+}
+
+.checkout-button1 {
+    margin-top: 2px;
 }
 
 .checkout-button:hover,
@@ -517,7 +528,8 @@ i {
 
 
 .login-header {
-    margin-top: 230px;
+    margin-top: 80px;
+    color: var(--first-color);
 }
 
 #product-management-header {
@@ -641,8 +653,8 @@ i {
 /* Password reset page */
 
 .password-head {
-    margin-top: 270px;
-    color: var(--text-primary-color);
+    margin-top: 120px;
+    color: var(--first-color)
 }
 
 /* Sign out page */
@@ -660,7 +672,7 @@ i {
 /* Bag container */
 
 .container-bag {
-    height: calc(100vh - 490px);
+    height: 100vh !important;
 }
 
 .faq-cont {
@@ -851,5 +863,82 @@ i {
     .card-body {
         font-size: 0.8rem !important;
     }
+
+    .bag-total-head {
+        text-align: center;
+        color: var(--first-color);
+        margin: 10px 0 50px 0;
+    }
+
+    .bag-total {
+        font-weight: bold;
+        color: #144945;
+    }
+
+    .remove-item {
+        color: #dc143c;
+    }
+
+    .update-link {
+        color: #144945;
+    }
+
+    .remove-item:hover,
+    .update-link:hover {
+        text-decoration: none;
+    }
+
+    .remove-item:hover {
+        color: #dc143c;
+        opacity: 0.5;
+    }
+
+    .update-link:hover {
+        color: #144945;
+        opacity: 0.5;
+    }
+
+    .remove-item,
+    .update-link {
+        border: 1px solid #144945;
+        padding: 0.3rem;
+        border-radius: 10px;
+    }
+
+    .bag-contents-header {
+        padding: 10px;
+        color: #144945;
+        text-transform: uppercase;
+    }
+
+    .product-head,
+    .qty-head,
+    .sub-head {
+        text-align: center;
+    }
+
+    .checkout-button,
+    .checkout-button1 {
+        font-size: 1rem;
+        padding: 0;
+        width: 100%;
+        display: block;
+    }
+
+    .checkout-button1 {
+        padding: 0 5px 0 5px;
+        text-align: center;
+        margin-left: 40px;
+    }
+
+    .update-link,
+    .remove-item {
+        font-size: 1rem !important;
+    }
+
+    .summary {
+        text-align: center;
+    }
+
 
 }
