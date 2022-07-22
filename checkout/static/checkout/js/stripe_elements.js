@@ -29,7 +29,7 @@ card.mount('#card-element');
 
 // Gives an error message to user if there is an error in the card details box
 
-card.addEventListener('change', function(event) {
+card.addEventListener('change', function (event) {
     var errorDiv = document.getElementById('card-errors');
     if (event.error) {
         var html = `
@@ -40,6 +40,7 @@ card.addEventListener('change', function(event) {
         `;
         $(errorDiv).html(html);
     } else {
+        s
         errorDiv.textContent = '';
     }
 });
@@ -49,7 +50,7 @@ card.addEventListener('change', function(event) {
 
 var form = document.getElementById('payment-form');
 
-form.addEventListener('submit', function(ev) {
+form.addEventListener('submit', function (ev) {
     ev.preventDefault();
     card.update({
         'disabled': true
@@ -68,7 +69,7 @@ form.addEventListener('submit', function(ev) {
     };
     var url = '/checkout/cache_checkout_data/';
 
-    $.post(url, postData).done(function() {
+    $.post(url, postData).done(function () {
         stripe.confirmCardPayment(clientSecret, {
             payment_method: {
                 card: card,
@@ -97,7 +98,7 @@ form.addEventListener('submit', function(ev) {
                     state: $.trim(form.county.value),
                 }
             },
-        }).then(function(result) {
+        }).then(function (result) {
             if (result.error) {
                 var errorDiv = document.getElementById('card-errors');
                 var html = `
@@ -118,8 +119,8 @@ form.addEventListener('submit', function(ev) {
                 }
             }
         });
-    }).fail(function() {
+    }).fail(function () {
         // just reload the page, the error will be in django messages
         location.reload();
-    })
+    });
 });

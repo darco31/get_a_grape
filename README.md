@@ -161,6 +161,8 @@ The Database diagram can be found [here](docs/gag.db.pdf.pdf)
 
 # Features
 
+![Features](static/imgs/feature_grid.PNG)
+
 ## Home Page
 
 * The homepage is a simple design with visible navbar links for all products as well as a breakdown of each product category. We also have a visible call to action button for the user to start shopping. The Account dropdown and shopping back icons are clearly visible. There is a scrolling banner with any special offers available and an intuitive search box for the user to search the website.
@@ -348,6 +350,9 @@ go back to all products.
 - [Views](docs/validation/python/profiles/views.PNG "views")
 
 ### Javascript Validations
+
+- [Country Fields](docs/validation/javascript/country_fields.PNG "country")
+- [Stripe Elements](docs/validation/javascript/stripe_elements.PNG "stripe")
 
 ### HTML Validations
 
