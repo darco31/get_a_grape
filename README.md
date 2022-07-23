@@ -467,6 +467,20 @@ command: git push heroku main
 
 # Issues/Bugs
 
+## Closed Bugs
+
+1. When searching for items the returned images were not displaying correctly in the browser window.
+2. When making a payment the stripe webhooks were failing.
+3. The footer was not staying at the bottom of the page when the bag empty page was showing.
+4. The Stripe overlay was not showing on the completion of a purchase.
+
+* All items above have been addressed and are working as expected.
+
+## Open Bugs
+
+1. The user profile page doesn't appear when clicked in mobile view.
+2. The logo I have designed and that can be seen in the Facebook mock ups is not showing on the live website.
+
 
 
 #### [Back to content](#table-of-contents)

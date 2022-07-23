@@ -105,3 +105,7 @@ select option[value=""] {
 .offer-text:hover {
     background-color: #eeeeee !important;
 }
+
+.logo-font-thanks {
+    color: #144945
+}
