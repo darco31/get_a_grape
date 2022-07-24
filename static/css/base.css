@@ -33,6 +33,15 @@ hr {
     font-size: 1.3rem;
 }
 
+.error-button {
+    background-color: var(--first-color);
+    color: var(--fifth-color);
+}
+
+.error-button:hover {
+    opacity: 0.8;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -96,6 +105,11 @@ hr {
 .logo-font-sign-out {
     margin-top: 5rem;
     color: #144945;
+}
+
+.error-head {
+    color: var(--third-color);
+    font-size: 1.3rem;
 }
 
 .logo {
@@ -210,6 +224,7 @@ a.category-badge>span.badge:hover {
     border-color: #dc3545;
     border-radius: 0;
 }
+
 
 /* Footer */
 footer {
