@@ -717,12 +717,15 @@ i {
     }
 
     .display-4.logo {
-        margin-top: 10px !important;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     .head-pro {
         margin-top: 10px;
+    }
+
+    .my-auto {
+        margin-top: 200px !important;
     }
 
     .search-para,
@@ -752,11 +755,11 @@ i {
     }
 
     #delivery-banner h4 {
-        font-size: .9rem;
+        font-size: 1.2rem;
     }
 
     marquee {
-        height: 20px;
+        height: 40px;
     }
 
     .shop-now-button {
