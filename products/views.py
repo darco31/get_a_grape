@@ -18,8 +18,7 @@ def all_products(request):
     sort = None
     direction = None
 
-    # Below is coded to allow sorting on the products by price, category and \
-    # rating
+    # Below is coded to allow sorting on the products
     if request.GET:
 
         if 'sort' in request.GET:
@@ -62,7 +61,7 @@ def all_products(request):
         'current_categories': categories,
         'current_sorting': current_sorting,
     }
-    
+
     return render(request, 'products/products.html', context)
 
 

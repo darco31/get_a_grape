@@ -970,7 +970,29 @@ i {
     .summary {
         text-align: center;
     }
+}
 
+/* Marquee scrolling text */
 
+.marquee {
+    color: var(--eight-color);
+    width: 100%;
+    background: var(--first-color);
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+}
 
+.marquee div {
+    font-size: 1.6rem;
+    font-family: verdana;
+    padding-left: 100%;
+    display: inline-block;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    100% {
+        transform: translate(-100%, 0);
+    }
 }

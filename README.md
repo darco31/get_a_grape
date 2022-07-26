@@ -202,7 +202,7 @@ go back to all products.
 
 * The inspiration for the colors used on the website where taken from [Canva](https://www.canva.com/)
 
-![Color Pallette](static/imgs/color-pallete.PNG)
+![Color Pallette](static/imgs/colors.PNG)
 
 #### [Back to content](#table-of-contents)
 
@@ -360,6 +360,11 @@ go back to all products.
 - [Product](docs/validation/html/html_products_check.PNG "product")
 
 ### CSS Validation
+
+
+### Automated testing
+
+* I attempted some automated testing but due to time constraints caused by myself (I gave myself one week less as a family holiday was booked) I was not able to include them to a satisfactory level.
 
 #### [Back to content](#table-of-contents)
 
