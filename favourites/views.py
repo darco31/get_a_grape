@@ -75,6 +75,6 @@ def remove_favourites(request, item_id, redirect_from):
     if redirect_from == 'favourites':
         redirect_url = reverse('favourites')
     else:
-        redirect_url = reverse('product_details', args=[product.id])
+        redirect_url = reverse('product_detail', args=[product.id])
 
     return redirect(redirect_url)
