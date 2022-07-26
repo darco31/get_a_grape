@@ -360,14 +360,14 @@ go back to all products.
 - [Products](docs/validation/html/products_val.PNG "products")
 - [Bag](docs/validation/html/home_val.PNG "bag")
 - [Contact](docs/validation/html/home_val.PNG "contact")
-- [Favourites](docs/validation/html/home_val.PNG "home")
-- [Privacy](docs/validation/html/home_val.PNG "home")
-- [Product Management](docs/validation/html/home_val.PNG "home")
-- [Shipping](docs/validation/html/home_val.PNG "home")
-- [Profiles](docs/validation/html/home_val.PNG "home")
-- [FAQ](docs/validation/html/home_val.PNG "home")
-- [Checkout](docs/validation/html/home_val.PNG "home")
-- [Logout](docs/validation/html/home_val.PNG "home")
+- [Favourites](docs/validation/html/home_val.PNG "favourites")
+- [Privacy](docs/validation/html/home_val.PNG "privacy")
+- [Product Management](docs/validation/html/home_val.PNG "management")
+- [Shipping](docs/validation/html/home_val.PNG "shipping")
+- [Profiles](docs/validation/html/home_val.PNG "profiles")
+- [FAQ](docs/validation/html/home_val.PNG "faq")
+- [Checkout](docs/validation/html/home_val.PNG "checkout")
+- [Logout](docs/validation/html/home_val.PNG "logout")
 
 ### CSS Validation
 

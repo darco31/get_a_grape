@@ -3,7 +3,7 @@
 {% load bag_tools %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
 {% block page_header %}
@@ -93,7 +93,8 @@
                     <div class="form-check form-check-inline float-right mr-0">
                         {% if user.is_authenticated %}
                         <label for="id-save-info" class="form-check-label">Save my Info</label>
-                        <input type="checkbox" class="form-check-input ml-2 mr-0" id="id-save-info" name="save-info" checked>
+                        <input type="checkbox" class="form-check-input ml-2 mr-0" id="id-save-info" name="save-info"
+                            checked>
                         {% else %}
                         <label for="id-save-info" class="form-check-label">
                             <a href="{% url 'account_signup' %}" class="text-info">Create an Account</a> or
