@@ -356,11 +356,26 @@ go back to all products.
 
 ### HTML Validations
 
-- [Home](docs/validation/html/html_check_home.PNG "home")
-- [Product](docs/validation/html/html_products_check.PNG "product")
+- [Home](docs/validation/html/home_val.PNG "home")
+- [Products](docs/validation/html/products_val.PNG "products")
+- [Bag](docs/validation/html/home_val.PNG "bag")
+- [Contact](docs/validation/html/home_val.PNG "contact")
+- [Favourites](docs/validation/html/home_val.PNG "home")
+- [Privacy](docs/validation/html/home_val.PNG "home")
+- [Product Management](docs/validation/html/home_val.PNG "home")
+- [Shipping](docs/validation/html/home_val.PNG "home")
+- [Profiles](docs/validation/html/home_val.PNG "home")
+- [FAQ](docs/validation/html/home_val.PNG "home")
+- [Checkout](docs/validation/html/home_val.PNG "home")
+- [Logout](docs/validation/html/home_val.PNG "home")
 
 ### CSS Validation
 
+- [Base](docs/validation/html/home_val.PNG "home")
+- [Checkout](docs/validation/html/home_val.PNG "home")
+- [Contact](docs/validation/html/home_val.PNG "home")
+- [Product](docs/validation/html/home_val.PNG "home")
+- [Profile](docs/validation/html/home_val.PNG "home")
 
 ### Automated testing
 
