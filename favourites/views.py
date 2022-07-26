@@ -33,3 +33,48 @@ def favourites_view(request):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def add_favourites(request, item_id):
+    """View to add a product to favourites"""
+
+    product = get_object_or_404(Product, pk=item_id)
+    try:
+        favourites = get_object_or_404(Favourites, username=request.user.id)
+    except Http404:
+        favourites = Favourites.objects.create(username=request.user)
+
+    if product in favourites.products.all():
+        messages.info(request, 'The product is already in your favourites!')
+        messages.info(request, f'{product.name} is already in your \
+            favourites!')
+
+    else:
+        favourites.products.add(product)
+        messages.success(request, f'{product.name} successfully added \
+            to your favourites!')
+
+    return redirect(reverse('product_detail', args=[product.id]))
+
+
+@login_required
+def remove_favourites(request, item_id, redirect_from):
+    """
+    A view that will remove a product item to favourites
+    """
+    product = get_object_or_404(Product, pk=item_id)
+    favourites = get_object_or_404(Favourites, username=request.user.id)
+    if product in favourites.products.all():
+        favourites.products.remove(product)
+        messages.success(request, f'{product.name} successfully removed \
+            from favourites!')
+    else:
+        messages.error(request, f'{product.name} is not in your favourites!')
+
+    if redirect_from == 'favourites':
+        redirect_url = reverse('favourites')
+    else:
+        redirect_url = reverse('product_details', args=[product.id])
+
+    return redirect(redirect_url)

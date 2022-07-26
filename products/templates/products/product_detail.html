@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
+
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
@@ -56,14 +57,14 @@
                     <!-- Add/Remove from Favourites -->
                     {% if user.is_authenticated %}
                     {% if is_in_favourites %}
-                    <a href="#" aria-label="remove product from your favourites" class="text-danger ml-3 favourites">
+                    <a href="{% url 'remove_favourites' product.id %}" aria-label="remove product from your favourites" class="ml-3 favourites">
                         <i class="fas fa-heart"></i>
-                        <p class="small mt-1 mb-0 text-muted">Remove from Favourites</p>
+                        <p class="small text-muted">Remove from Favourites</p>
                     </a>
                     {% else %}
-                    <a href="#" aria-label="add product to your favourites" class="text-danger ml-3 favourites">
+                    <a href="{% url 'add_favourites' product.id %}" aria-label="add product to your favourites" class="ml-3 favourites">
                         <i class="fa-regular fa-heart"></i>
-                        <p class="small mt-1 mb-0 text-muted">Add to Favourites</p>
+                        <p class="small text-muted">Add to Favourites</p>
                     </a>
                     {% endif %}
                     {% endif %}

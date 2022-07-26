@@ -61,9 +61,11 @@
       "rjjhob",
       "sauvignon",
       "signin",
+      "signout",
       "signups",
       "sqlparse",
       "Userstories",
-      "wsgi"
+      "wsgi",
+      "zditect"
    ]
 }

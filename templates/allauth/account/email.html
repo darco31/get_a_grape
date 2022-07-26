@@ -42,7 +42,9 @@
 </form>
 
 {% else %}
-<p><strong>{% trans 'Warning:'%}</strong> {% trans "You currently do not have any e-mail address set up. You should really add an e-mail address so you can receive notifications, reset your password, etc." %}</p>
+<p><strong>{% trans 'Warning:'%}</strong>
+    {% trans "You currently do not have any e-mail address set up. You should really add an e-mail address so you can receive notifications, reset your password, etc." %}
+</p>
 
 {% endif %}
 
@@ -59,7 +61,7 @@
 
 
 {% block extra_body %}
-<script type="text/javascript">
+<script>
     (function() {
         var message = "{% trans 'Do you really want to remove the selected e-mail address?' %}";
         var actions = document.getElementsByName('action_remove');

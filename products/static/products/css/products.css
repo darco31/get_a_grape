@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --first-color: #144945;
+    --second-color: #fff;
+    --third-color: #000000;
+    --forth-color: #C5C6C7;
+    --fifth-color: #d3dbde;
+    --sixth-color: #dc3545;
+    --seventh-color: #555555;
+}
+
+
+.favs-header {
+    margin-top: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--seventh-color);
+}
+
+.card {
+    border: none;
+    margin-top: 1.2rem;
+}
+
+.card-footer,
+.card-body,
+.item-img {
+    background-color: var(--second-color);
+}
+
+#hover-state:hover {
+    text-decoration: none !important;
+}
