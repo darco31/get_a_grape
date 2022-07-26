@@ -17,7 +17,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', ' ')
 
 # DEBUG = 'DEVELOPMENT' in os.environ
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['get-a-grape.herokuapp.com', 'localhost']
 
