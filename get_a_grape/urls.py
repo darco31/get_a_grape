@@ -19,3 +19,5 @@ urlpatterns = [
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'get_a_grape.views.handler404'
+handler500 = 'favourites.views.error_500_view'
+

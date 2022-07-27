@@ -10,6 +10,13 @@ from products.models import Product
 from .models import Favourites
 
 
+def error_500_view(request):
+    """
+    500 error view
+    """
+    return render(request, '500.html', status=500)
+
+
 @login_required
 def favourites_view(request):
 
