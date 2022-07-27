@@ -7,7 +7,10 @@ from .forms import ContactForm
 
 
 def contact(request):
-
+    """
+    This view shows and submits the query form and shows the success/error
+    messages.
+    """
     if request.method == 'POST':
         form = ContactForm(request.POST, request.FILES)
         if form.is_valid():

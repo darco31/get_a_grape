@@ -8,9 +8,9 @@ class Contact(models.Model):
     """
     Contact page model
     """
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=254)
     email = models.EmailField()
-    phone_number = models.CharField(max_length=30, blank=True)
+    mobile_number = models.CharField(max_length=30, blank=True)
     message = models.TextField()
     message_date = models.DateTimeField(auto_now_add=True)
 

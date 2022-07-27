@@ -15,7 +15,6 @@ class ContactForm(ModelForm):
         fields = [
             'name',
             'email',
-            'phone_number',
+            'mobile_number',
             'message',
         ]
-
