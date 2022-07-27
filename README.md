@@ -311,15 +311,6 @@ go back to all products.
 - [Signals](docs/validation/python/checkout/signals.PNG "signals")
 - [Models](docs/validation/python/checkout/models.PNG "models")
 
-### Contact
-
-- [Apps](docs/validation/python/contact/apps.PNG "apps")
-- [Admin](docs/validation/python/contact/admin.PNG "admin")
-- [Forms](docs/validation/python/contact/checkout/forms.PNG "forms")
-- [Models](docs/validation/python/contact/models.PNG "models")
-- [Urls](docs/validation/python/contact/urls.PNG "urls")
-- [Views](docs/validation/python/contact/views.PNG "views")
-
 ### Home
 - [Apps](docs/validation/python/home/apps.PNG "apps")
 - [Urls](docs/validation/python/home/urls.PNG "urls")
@@ -359,8 +350,6 @@ go back to all products.
 - [Home](docs/validation/html/home_val.PNG "home")
 - [Products](docs/validation/html/products_val.PNG "products")
 - [Bag](docs/validation/html/home_val.PNG "bag")
-- [Contact](docs/validation/html/home_val.PNG "contact")
-- [Favourites](docs/validation/html/home_val.PNG "favourites")
 - [Privacy](docs/validation/html/home_val.PNG "privacy")
 - [Product Management](docs/validation/html/home_val.PNG "management")
 - [Shipping](docs/validation/html/home_val.PNG "shipping")
@@ -373,7 +362,6 @@ go back to all products.
 
 - [Base](docs/validation/html/home_val.PNG "home")
 - [Checkout](docs/validation/html/home_val.PNG "home")
-- [Contact](docs/validation/html/home_val.PNG "home")
 - [Product](docs/validation/html/home_val.PNG "home")
 - [Profile](docs/validation/html/home_val.PNG "home")
 
