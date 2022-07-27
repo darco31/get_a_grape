@@ -15,9 +15,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY', ' ')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-# DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = 'DEVELOPMENT' in os.environ
 
-DEBUG = True
+# DEBUG = True
 
 ALLOWED_HOSTS = ['get-a-grape.herokuapp.com', 'localhost']
 
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
     'contact',
+    'favorites',
 
     'crispy_forms',
     'storages',
