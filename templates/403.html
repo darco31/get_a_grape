@@ -1,0 +1,29 @@
+{% extends 'base.html'%}
+
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_title%}
+403 Error
+{% endblock %}
+
+{% block content%}
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-6 my-auto error">
+            <h1 class="display-4 logo">
+                You must have had too much to drink. Nothing to see here!
+            </h1>
+            <h4>This page doesn't exist</h4>
+            <a href="{% url 'products' %}" id="faq-button">Back to Products</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

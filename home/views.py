@@ -4,21 +4,21 @@ from django.core.mail import send_mail
 from django.contrib import messages
 
 
-def error_403_view(request, exception):
+def error_403(request, exception):
     """
     403 error view
     """
     return render(request, '403.html', status=403)
 
 
-def error_404_view(request, exception):
+def error_404(request, exception):
     """
     404 error view
     """
     return render(request, '404.html', status=404)
 
 
-def error_500_view(request):
+def error_500(request):
     """
     500 error view
     """
