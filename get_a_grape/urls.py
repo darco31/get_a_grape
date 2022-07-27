@@ -16,4 +16,6 @@ urlpatterns = [
     path('contact/', include('contact.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-handler404 = 'get_a_grape.views.handler404'
+handler403 = 'home.views.error_403_view'
+handler404 = 'home.views.error_404_view'
+handler500 = 'home.views.error_500_view'
