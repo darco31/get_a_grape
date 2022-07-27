@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block extra_css %}
-<!-- <link rel="stylesheet" href="{% static 'css/base.css' %}"> -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'products/css/products.css' %}">
 {% endblock %}
 
@@ -35,8 +35,7 @@
             <div class="row mt-1 mb-1">
                 <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                     <div class="sort-select-wrapper">
-                        <select name="#" id="sort-selector"
-                            class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                        <select name="#" id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
                             <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort By...
                             </option>
                             <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price
@@ -53,8 +52,7 @@
                                 (Z-A)</option>
                             <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>
                                 Category (A-Z)</option>
-                            <option value="category_desc"
-                                {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
+                            <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
                         </select>
                     </div>
                 </div>
@@ -80,8 +78,7 @@
                         </a>
                         {% else %}
                         <a href="{% url 'product_detail' product.id %}">
-                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
-                                class="card-img-top img-fluid">
+                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}" class="card-img-top img-fluid">
                         </a>
                         {% endif %}
                         <!-- Body of products cards -->
@@ -96,15 +93,13 @@
                                     <p class="lead mb-0 text-center font-weight-bold">€{{ product.price }}</p>
                                     {% if product.rating %}
                                     <p class="small mt-1 mb-0">
-                                        <a href="{% url 'products' %}?category={{ product.category.name }}"
-                                            class="text-muted">
+                                        <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
                                             <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                                         </a>
                                     </p>
                                     {% endif %}
                                     {% if product.rating %}
-                                    <small class="text-muted"><i
-                                            class="fas fa-star mr-1">{{ product.rating }}</i></small>
+                                    <small class="text-muted"><i class="fas fa-star mr-1">{{ product.rating }}</i></small>
                                     {% else %}
                                     <small class="text-muted">No Rating</small>
                                     {% endif %}
@@ -145,13 +140,13 @@
 <!-- Back to top of page button js -->
 
 <script>
-    $('.btt-link').click(function (e) {
+    $('.btt-link').click(function(e) {
         window.scrollTo(0, 0)
     })
 </script>
 
 <script>
-    $('#sort-selector').change(function () {
+    $('#sort-selector').change(function() {
         var selector = $(this);
         var currentUrl = new URL(window.location);
 
