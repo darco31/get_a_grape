@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 
 class Favourites(models.Model):
-
+    """Favourites model"""
     class Meta:
         verbose_name_plural = 'Favourites'
 

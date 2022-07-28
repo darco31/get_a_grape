@@ -1,5 +1,5 @@
 """ Favourites Views """
-from django.shortcuts import (render, get_object_or_404, redirect)
+from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.http import Http404
@@ -56,13 +56,13 @@ def add_favourites(request, item_id):
         favourites.products.add(product)
         messages.info(request, 'Added the product to your favourites')
 
-    return redirect(reverse('product_detail', args=[item_id]))
+    return redirect(reverse('product_detail', args=[product.id]))
 
 
 @login_required
 def remove_favourites(request, item_id, redirect_from):
     """
-    A view that will add a product item to favourites
+    A view that will remove a product item to favourites
     """
     product = get_object_or_404(Product, pk=item_id)
     favourites = get_object_or_404(Favourites, username=request.user.id)
@@ -76,6 +76,6 @@ def remove_favourites(request, item_id, redirect_from):
     if redirect_from == 'favourites':
         redirect_url = reverse('favourites')
     else:
-        redirect_url = reverse('product_detail', args=[item_id])
+        redirect_url = reverse('product_detail', args=[product.id])
 
     return redirect(redirect_url)
