@@ -18,22 +18,23 @@ def favourites_view(request):
     """
     A view that displays users favourites
     """
-    favourites_items_count = 0
+    favourite_items_count = 0
+
     try:
         all_favourites = Favourites.objects.filter(username=request.user.id)[0]
     except IndexError:
-        favourites_items = None
+        favourite_items = None
     else:
-        favourites_items = all_favourites.products.all()
-        favourites_items_count = all_favourites.products.all().count()
+        favourite_items = all_favourites.products.all()
+        favourite_items_count = all_favourites.products.all().count()
 
-    if not favourites_items:
+    if not favourite_items:
         messages.info(request, 'Your favourites list is empty!')
 
     template = 'favourites/favourites.html'
     context = {
-        'favourites_items': favourites_items,
-        'favourites_items_count': favourites_items_count
+        'favourite_items': favourite_items,
+        'favourite_items_count': favourite_items_count
     }
 
     return render(request, template, context)
@@ -62,20 +63,20 @@ def add_favourites(request, item_id):
 @login_required
 def remove_favourites(request, item_id, redirect_from):
     """
-    A view that will remove a product item to favourites
+    A view that will add a product item to favourites
     """
     product = get_object_or_404(Product, pk=item_id)
     favourites = get_object_or_404(Favourites, username=request.user.id)
     if product in favourites.products.all():
         favourites.products.remove(product)
-        messages.info(request, 'Removed the product '
-                               'from your favourites list')
+        messages.success(request, f'{product.name} successfully removed \
+            from favourites!')
     else:
-        messages.error(request, 'That product is '
-                                'not in your favourites list!')
+        messages.error(request, f'{product.name} is not in your favourites!')
+
     if redirect_from == 'favourites':
         redirect_url = reverse('favourites')
     else:
-        redirect_url = reverse('product_detail', args=[product.id])
+        redirect_url = reverse('product_details', args=[product.id])
 
     return redirect(redirect_url)
