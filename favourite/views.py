@@ -40,7 +40,7 @@ def favourites_view(request):
 
 
 @login_required
-def add_to_favourites(request, item_id):
+def add_favourites(request, item_id):
     """
     A view that will add a product item to favourites
     """
@@ -60,7 +60,7 @@ def add_to_favourites(request, item_id):
 
 
 @login_required
-def remove_from_favourites(request, item_id, redirect_from):
+def remove_favourites(request, item_id, redirect_from):
     """
     A view that will add a product item to favourites
     """
