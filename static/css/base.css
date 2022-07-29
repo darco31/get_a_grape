@@ -445,6 +445,7 @@ i {
 .checkout-button1,
 .information-button,
 .signout_button,
+.sign-up-button,
 .keep-button-checkout,
 #keep-button,
 #contact-button,
@@ -648,12 +649,6 @@ i {
     color: var(--first-color);
 }
 
-.sign-up-button {
-    color: var(--first-color);
-    border: none;
-    background-color: transparent;
-}
-
 .sign-up-button:hover {
     text-decoration: none;
     color: var(--first-color);
@@ -662,7 +657,7 @@ i {
 
 .login-page-return {
     color: var(--first-color);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
 }
 
@@ -702,7 +697,7 @@ i {
 }
 
 .container-favs {
-    min-height: 100vh
+    min-height: 60vh
 }
 
 .faq-cont {
@@ -786,6 +781,14 @@ i {
     .navbar-nav,
     .dropdown-item {
         font-size: 0.8rem;
+    }
+
+    #home-link {
+        color: var(--seventh-color);
+    }
+
+    #home-link:hover {
+        background-color: transparent;
     }
 
     .navbar-toggler {

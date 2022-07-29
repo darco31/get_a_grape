@@ -307,20 +307,43 @@ Google Chrome/ Firefox and Microsoft Edge were used to test responsiveness.
 
 * User registration
 
-A new user can register for the website by clicking the Account button in the top right of the screen and click register.
-they will be redirected to the below page where they are prompted to enter their details.
+![Registration](docs/manual_testing/reg.gif)
 
 * User Login
 
+![Login](docs/manual_testing/login.gif)
+
 * User Logout
+
+![Logout](docs/manual_testing/logout.gif)
 
 * Add Products
 
+![Add Products](docs/manual_testing/add_product.gif)
+
 * Remove Products
+
+![Remove Products](docs/manual_testing/remove.gif)
 
 * Checkout
 
+![Checkout](docs/manual_testing/checkout.gif)
+
 * Contact Page
+
+![Contact](docs/manual_testing/reg.gif)
+
+* Add Favourite
+
+![Add Favourites](docs/manual_testing/add_favs.gif)
+
+* Update product
+
+![Update Product](docs/manual_testing/add_to_bag.gif)
+
+* View Profile
+
+![Profile](docs/manual_testing/profile.gif)
 
 ## Python Validations
   ### Bag
