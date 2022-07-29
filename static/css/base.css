@@ -270,6 +270,7 @@ strong {
     margin: 0 auto;
 }
 
+
 h6 {
     color: #323a25;
 }
@@ -684,6 +685,7 @@ i {
     height: calc(100vh - 470px);
 }
 
+
 /* sign up container styles */
 
 .container-sign-up {
@@ -758,8 +760,17 @@ i {
     }
 
     nav li {
-        /* padding: 0.15rem; */
         width: 25%;
+    }
+
+    /* Policy container */
+
+    .policy-cont {
+        text-align: center !important;
+    }
+
+    .policy-list {
+        text-align: left;
     }
 
     .nav-ul {

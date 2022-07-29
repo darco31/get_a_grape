@@ -28,6 +28,7 @@
 9. [Technology Used In Design](#Technology-Used-In-Design)
 
 10. [Testing](#Testing)
+    - [Responsive testing](#responsive-testing)
 
 11. [Deployment](#Deployment)
 
@@ -242,7 +243,7 @@ go back to all products.
 * [Bootstrap](https://getbootstrap.com/)
     - Bootstrap is mainly used to style the page and add responsiveness to the website.
 * [AWS Amazon](https://aws.amazon.com/)
-    - AWS S3 buckets is used to store all the images used withing the project.
+    - AWS S3 buckets is used to store all the images used within the project.
 * [Google Fonts](https://fonts.google.com/)
     - Used as the main fonts throughout the project.
 * [Git](https://git-scm.com/)
@@ -291,6 +292,28 @@ go back to all products.
 * stripe==3.5.0
 
 # Testing
+
+## Responsive Testing
+
+I have tested the responsiveness of the site on several different devices listed below:
+
+* PC
+* Ipad - 9.7 inch
+* Samsung mobiles S21
+
+Google Chrome/ Firefox and Microsoft Edge were used to test responsiveness.
+
+## Manual Testing
+
+* User registration
+
+* User Login
+
+* User Logout
+
+* Add Products
+
+* Remove Products
 
 ## Python Validations
   ### Bag
@@ -449,6 +472,11 @@ command: git push heroku main
 
 # Credits
 
+### Content
+
+* I followed the tutorial given by Boutique Ado to have the site setup completed. I found this a way to solidify my understanding of Django and also
+give me the confidence to try add new apps and features to my project.
+
 ### Images
 
 - Site images were taken from https://www.pexels.com/
@@ -481,12 +509,14 @@ command: git push heroku main
 2. When making a payment the stripe webhooks were failing.
 3. The footer was not staying at the bottom of the page when the bag empty page was showing.
 4. The Stripe overlay was not showing on the completion of a purchase.
+5. The user profile page doesn't appear when clicked in mobile view.
 
 * All items above have been addressed and are working as expected.
 
 ## Open Bugs
 
-1. The user profile page doesn't appear when clicked in mobile view.
+1. The authentication overlay is not present one payments have been completed. I was unsure as to include this as it was noticed after the final deployment and I 
+some very serious issues with Stripe not doing what it was supposed to be doing so decided to leave it out to maintain the functionality of the site.
 2. The logo I have designed and that can be seen in the Facebook mock ups is not showing on the live website.
 
 
