@@ -158,7 +158,7 @@ Created the templates folder for allauth , base.html and the includes folder.
 
 # Database
 
-The Database diagram can be found [here](docs/gag.db.pdf.pdf)
+The Database diagram can be found [here](docs/getagrape.pdf)
 
 # Features
 
@@ -315,6 +315,10 @@ Google Chrome/ Firefox and Microsoft Edge were used to test responsiveness.
 
 * Remove Products
 
+* Checkout
+
+* Contact Page
+
 ## Python Validations
   ### Bag
 - [Apps](docs/validation/python/bag/apps.PNG "apps")
@@ -362,6 +366,12 @@ Google Chrome/ Firefox and Microsoft Edge were used to test responsiveness.
 - [Models](docs/validation/python/profiles/models.PNG "models")
 - [Urls](docs/validation/python/profiles/urls.PNG "urls")
 - [Views](docs/validation/python/profiles/views.PNG "views")
+
+### Favourites
+
+- [Models](docs/validation/python/favourites/models.PNG "models")
+- [Urls](docs/validation/python/favourites/urls.PNG "urls")
+- [Views](docs/validation/python/favourites/views.PNG "views")
 
 ### Javascript Validations
 
