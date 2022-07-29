@@ -421,6 +421,10 @@ i {
     color: var(--second-color);
 }
 
+.dropdown-item:hover {
+    color: var(--seventh-color);
+}
+
 .product_name strong {
     color: var(--first-color) !important;
 }

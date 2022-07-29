@@ -307,7 +307,8 @@ Google Chrome/ Firefox and Microsoft Edge were used to test responsiveness.
 
 * User registration
 
-![Registration](docs/manual_testing/registration.gif)
+A new user can register for the website by clicking the Account button in the top right of the screen and click register.
+they will be redirected to the below page where they are prompted to enter their details.
 
 * User Login
 
@@ -408,7 +409,7 @@ Google Chrome/ Firefox and Microsoft Edge were used to test responsiveness.
 
 # Deployment
 
-The live deployed application can be found here ![Live Site](docs/manual_testing/qr_livesite.png)
+The live deployed application can be found here https://get-a-grape.herokuapp.com/ 
 ### Gitpod and GitHub
 
 To use the terminal designed by The Code Institute I used the [Code Institute Full Template](https://github.com/Code-Institute-Org/gitpod-full-template).
