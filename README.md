@@ -510,6 +510,8 @@ give me the confidence to try add new apps and features to my project.
 3. The footer was not staying at the bottom of the page when the bag empty page was showing.
 4. The Stripe overlay was not showing on the completion of a purchase.
 5. The user profile page doesn't appear when clicked in mobile view.
+6. Registration page for new users was returning an internal error, issue was with how the line length was broken up in the settings file
+under AUTH_PASSWORD_VALIDATORS = [] .Issue fixed and tested.
 
 * All items above have been addressed and are working as expected.
 
