@@ -307,7 +307,7 @@ Google Chrome/ Firefox and Microsoft Edge were used to test responsiveness.
 
 * User registration
 
-![Registration](docs/manual_testing/registration.mp4)
+![Registration](docs/manual_testing/registration.gif)
 
 * User Login
 
