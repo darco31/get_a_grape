@@ -408,8 +408,7 @@ Google Chrome/ Firefox and Microsoft Edge were used to test responsiveness.
 
 # Deployment
 
-The live deployed application can be found here 
-
+The live deployed application can be found here ![Live Site](docs/manual_testing/qr_livesite.png)
 ### Gitpod and GitHub
 
 To use the terminal designed by The Code Institute I used the [Code Institute Full Template](https://github.com/Code-Institute-Org/gitpod-full-template).
