@@ -16,3 +16,22 @@ urlpatterns = [
     path('favourite/', include('favourite.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
+
+handler403 = 'home.views.handle_403'
+handler404 = 'home.views.handle_404'
+handler500 = 'home.views.handle_500'
+handler403 = 'bag.views.handle_403'
+handler404 = 'bag.views.handle_404'
+handler500 = 'bag.views.handle_500'
+handler403 = 'checkout.views.handle_403'
+handler404 = 'checkout.views.handle_404'
+handler500 = 'checkout.views.handle_500'
+handler403 = 'products.views.handle_403'
+handler404 = 'products.views.handle_404'
+handler500 = 'products.views.handle_500'
+handler403 = 'profiles.views.handle_403'
+handler404 = 'profiles.views.handle_404'
+handler500 = 'profiles.views.handle_500'
+handler403 = 'favourites.views.handle_403'
+handler404 = 'favourites.views.handle_404'
+handler500 = 'favourites.views.handle_500'

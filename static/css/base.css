@@ -694,6 +694,10 @@ i {
     min-height: 100vh
 }
 
+.container-favs {
+    min-height: 100vh
+}
+
 .faq-cont {
     height: 100vh;
 }
