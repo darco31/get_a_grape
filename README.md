@@ -144,7 +144,7 @@ Created the templates folder for allauth , base.html and the includes folder.
 
 - This is a standard B2C application modeled on an e commerce store. The idea is it is easy to access and use for the shopper.
 
-- We offer several different varieties of White, Red wines , Champagne and Rose.
+- We offer several different varieties of White, Red wines , Champagne, Sparkling wines and Rose.
 
 # Marketing
 
@@ -154,6 +154,12 @@ Created the templates folder for allauth , base.html and the includes folder.
 ![Facebook Pages](static/imgs/facebook_two.PNG)
 
 - We offer a mailchimp subscription service to keep members up to date on all or any offers.
+
+# SEO Search Engine Optimisation
+
+- 
+
+
 - SEO is done through keywords added to the meta tags in the html code. These key words were used in Google to gather the top results as displayed at time of testing.
 
 # Database
