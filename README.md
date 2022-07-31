@@ -157,8 +157,27 @@ Created the templates folder for allauth , base.html and the includes folder.
 
 # SEO Search Engine Optimisation
 
-- 
+## To search from relevant keys words I used a tool online called [Ahrefs](https://ahrefs.com/free-seo-tools) and [Word Tracker](https://www.wordtracker.com/)
 
+* global wines
+
+* global wines and spirit
+
+* global wine & spirit
+
+* Prosecco
+
+* sparkling wines
+
+* worldwide wines
+
+* wine worldwide
+
+* worldwide wine delivery
+
+* worldwidewines
+
+best wine worldwide
 
 - SEO is done through keywords added to the meta tags in the html code. These key words were used in Google to gather the top results as displayed at time of testing.
 
@@ -422,6 +441,7 @@ Google Chrome/ Firefox and Microsoft Edge were used to test responsiveness.
 - [FAQ](docs/validation/html/home_val.PNG "faq")
 - [Checkout](docs/validation/html/home_val.PNG "checkout")
 - [Logout](docs/validation/html/home_val.PNG "logout")
+- [404 Page](docs/validation/html/404.PNG "404 Page")
 
 ### CSS Validation
 

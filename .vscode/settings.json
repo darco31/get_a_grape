@@ -25,6 +25,7 @@
    "terminal.integrated.gpuAcceleration": "canvas",
    "editor.defaultFormatter": "HookyQR.beautify",
    "cSpell.words": [
+      "Ahrefs",
       "ASGI",
       "asgiref",
       "Balsamiq",
@@ -57,6 +58,7 @@
       "Optimisation",
       "pallete",
       "postloadjs",
+      "prosecco",
       "psycopg",
       "pytz",
       "reponsive",
@@ -67,6 +69,7 @@
       "signups",
       "sqlparse",
       "Userstories",
+      "worldwidewines",
       "wsgi",
       "zditect"
    ]
