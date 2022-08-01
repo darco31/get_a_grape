@@ -142,7 +142,8 @@ Created the templates folder for allauth , base.html and the includes folder.
 
 # Business Model
 
-- This is a standard B2C application modeled on an e commerce store. The idea is it is easy to access and use for the shopper.
+- This is a standard B2C application modeled on an e-commerce store. The idea is it is easy to access and use for the shopper. The users experience is better
+enhanced as they don't need to sign up to the site to make an order. I believe this is more attractive to a user.
 
 - We offer several different varieties of White, Red wines , Champagne, Sparkling wines and Rose.
 
