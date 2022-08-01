@@ -542,8 +542,21 @@ command: git push heroku main
 * I followed the tutorial given by Boutique Ado to have the site setup completed. I found this a way to solidify my understanding of Django and also
 give me the confidence to try add new apps and features to my project.
 
+* Custom 404 page from boutique Ado tutorial
+
+* GDPR policy generated [Here](https://www.gdprprivacynotice.com/)
+
+* Sitemap generated [Here](https://www.xml-sitemaps.com/)
+
+
+### The following helped with putting together the favourites functionality:
+
+* [American Ale House](https://american-ale-house.herokuapp.com/)
+* [Clay and Fire](https://clay-and-fire.herokuapp.com/)
+
 ### Images
 
+- Favicon generator found [Here](https://favicon.io/favicon-converter/) used to generate my Favicon.
 - Site images were taken from https://www.pexels.com/
 - Images for the wine bottles where taken from https://www.totalwine.com/ . Note these images are not for any redistribution and are for educational purposes only.  
 
