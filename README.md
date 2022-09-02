@@ -460,8 +460,7 @@ Google Chrome/ Firefox and Microsoft Edge were used to test responsiveness.
 # Deployment
 
 The live deployed application can be found here [Get-A-Grape](https://get-a-grape.herokuapp.com/)
-Admin: sd40644
-Password: chelseafc2
+
 
 ### Gitpod and GitHub
 
